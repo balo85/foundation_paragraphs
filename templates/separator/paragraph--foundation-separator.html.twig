@@ -1,0 +1,21 @@
+{##
+ # Twig for the Separator paragraphs
+ #}
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  'paragraphId-' ~ paragraph.id(),
+]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      <hr class="sepType-{{ content.field_foundation_separator_type[0]['#markup'] }}" />
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

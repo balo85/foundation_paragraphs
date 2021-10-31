@@ -1,0 +1,40 @@
+{##
+ # Twig for the Foundation Grid paragraphs
+ # Based on the Zurb Foundation XY Grid (https://get.foundation/sites/docs/xy-grid.html)
+ # Based on the Zurb Foundation Flexbox Utilities classes (https://get.foundation/sites/docs/flexbox-utilities.html)
+ #}
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  'paragraphId-' ~ paragraph.id()
+]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      {# If needed, I open the Grid Container wrapper #}
+      {% if containerType != 'none' %}
+        <div class="grid-container {{ containerType }}">
+      {% endif %}
+
+      <div class="grid-x {{ gutterType }} {{ gutterCollapse}} {{ vertAlign }} {{ horizAlign }}">
+        {{ content.field_foundation_grid_cells }}
+      </div>
+
+      {# If needed, I close the Grid Container wrapper #}
+      {% if containerType != 'none' %}
+        </div>
+      {% endif %}
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+
+
+
+
+
+

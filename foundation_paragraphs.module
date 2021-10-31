@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Contains foundation_paragraphs.module.
+ */
+
+
+/**
+ * Get all the files ending with .inc in the folder includes and add them to the project
+ */
+$dir = __DIR__ . '/includes';
+if (is_dir($dir)) {
+  $files = \Drupal::service('file_system')->scanDirectory($dir, '/.inc/');
+  foreach($files as $filepath => $file){ include $filepath; }
+}

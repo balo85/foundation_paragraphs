@@ -1,0 +1,43 @@
+uuid: ec82653a-2441-4727-b373-27819317b512
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.foundation_separator.field_foundation_bottom_margin
+    - field.field.paragraph.foundation_separator.field_foundation_classes
+    - field.field.paragraph.foundation_separator.field_foundation_id
+    - field.field.paragraph.foundation_separator.field_foundation_separator_type
+    - field.field.paragraph.foundation_separator.field_foundation_top_margin
+    - paragraphs.paragraphs_type.foundation_separator
+  module:
+    - options
+id: paragraph.foundation_separator.preview
+targetEntityType: paragraph
+bundle: foundation_separator
+mode: preview
+content:
+  field_foundation_bottom_margin:
+    type: list_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_foundation_separator_type:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_foundation_top_margin:
+    type: list_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_foundation_classes: true
+  field_foundation_id: true

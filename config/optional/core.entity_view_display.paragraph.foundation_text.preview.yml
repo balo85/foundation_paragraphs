@@ -1,0 +1,24 @@
+uuid: 6234cea3-507b-40a0-9149-6fb608f2991f
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.foundation_text.field_foundation_text
+    - paragraphs.paragraphs_type.foundation_text
+  module:
+    - text
+id: paragraph.foundation_text.preview
+targetEntityType: paragraph
+bundle: foundation_text
+mode: preview
+content:
+  field_foundation_text:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+hidden: {  }

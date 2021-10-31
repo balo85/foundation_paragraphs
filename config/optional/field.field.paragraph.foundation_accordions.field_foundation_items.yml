@@ -1,0 +1,46 @@
+uuid: 5df59e22-823e-4b0e-9247-0b2b33b81958
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_items
+    - paragraphs.paragraphs_type.foundation_accordion
+    - paragraphs.paragraphs_type.foundation_accordions
+  module:
+    - entity_reference_revisions
+id: paragraph.foundation_accordions.field_foundation_items
+field_name: field_foundation_items
+entity_type: paragraph
+bundle: foundation_accordions
+label: Items
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      foundation_accordion: foundation_accordion
+    target_bundles_drag_drop:
+      foundation_accordion:
+        enabled: true
+        weight: 7
+      foundation_accordions:
+        weight: 8
+        enabled: false
+      foundation_cell:
+        weight: 9
+        enabled: false
+      foundation_grid:
+        weight: 10
+        enabled: false
+      foundation_image:
+        weight: 11
+        enabled: false
+      foundation_text:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

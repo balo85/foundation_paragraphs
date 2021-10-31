@@ -1,0 +1,31 @@
+uuid: 6a02909e-e78b-4ad9-bd7b-3e98d18d2052
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_text.field_foundation_text
+    - paragraphs.paragraphs_type.foundation_text
+  module:
+    - text
+id: paragraph.foundation_text.default
+targetEntityType: paragraph
+bundle: foundation_text
+mode: default
+content:
+  field_foundation_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

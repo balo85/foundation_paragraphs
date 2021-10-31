@@ -1,0 +1,10 @@
+uuid: 8a42b115-39bf-45cb-9dd3-f3a3a371382e
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_accordions
+label: Accordions
+icon_uuid: null
+icon_default: null
+description: 'Define a custom Zurb Foundation Accordions container'
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: 9f17734d-3b14-44c7-b70e-c02e0bd8dabe
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_bottom_margin
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - options
+id: paragraph.foundation_grid.field_foundation_bottom_margin
+field_name: field_foundation_bottom_margin
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Bottom margin'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: s
+default_value_callback: ''
+settings: {  }
+field_type: list_string

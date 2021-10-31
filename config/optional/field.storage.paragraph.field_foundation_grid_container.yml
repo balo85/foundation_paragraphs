@@ -1,0 +1,33 @@
+uuid: cb21b957-369b-4b4a-94ae-f6117550e8a0
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_grid_container
+field_name: field_foundation_grid_container
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: None
+    -
+      value: standard
+      label: 'Standard container'
+    -
+      value: fluid
+      label: 'Fluid (stretch the content to the full width of the available space)'
+    -
+      value: full
+      label: 'Full (stretch the content to the full width of the available space and remove grid container padding)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

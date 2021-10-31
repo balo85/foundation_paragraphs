@@ -1,0 +1,33 @@
+uuid: fe762e1b-4d24-4044-a8d2-ea73ca78715e
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_all_closed
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_all_collapsed
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_items
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_multi_expand
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_tabs_from
+    - paragraphs.paragraphs_type.foundation_accordions_tabs
+  module:
+    - entity_reference_revisions
+id: paragraph.foundation_accordions_tabs.preview
+targetEntityType: paragraph
+bundle: foundation_accordions_tabs
+mode: preview
+content:
+  field_foundation_items:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_foundation_all_closed: true
+  field_foundation_all_collapsed: true
+  field_foundation_multi_expand: true
+  field_foundation_tabs_from: true

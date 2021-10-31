@@ -1,0 +1,27 @@
+{##
+ # Twig for the Responsive Accordions Tabs paragraphs
+ # Based on the Zurb Foundation Responsive Accordion Tabs (https://get.foundation/sites/docs/responsive-accordion-tabs.html)
+ # Based on the Zurb Foundation Accordion (https://get.foundation/sites/docs/accordion.html)
+ # Based on the Zurb Foundation Tabs (https://get.foundation/sites/docs/tabs.html)
+#}
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  'paragraphId-' ~ paragraph.id(),
+]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+    <ul class="accordion"
+        data-responsive-accordion-tabs="accordion {{ content.field_foundation_tabs_from[0]['#markup'] }}-tabs"
+        data-allow-all-closed="{{ (content.field_foundation_all_closed[0]['#markup'] == 1) ? 'true' : 'false' }}"
+        data-multi-expand="{{ (content.field_foundation_multi_expand[0]['#markup'] == 1) ? 'true' : 'false' }}"
+        data-active-collapse="{{ (content.field_foundation_all_collapsed[0]['#markup'] == 1) ? 'true' : 'false' }}">
+        {{ content.field_foundation_items }}
+      </ul>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

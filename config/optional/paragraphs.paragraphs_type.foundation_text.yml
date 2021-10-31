@@ -1,0 +1,10 @@
+uuid: 95c7547b-dc4b-46b1-a7ab-7b3f6b47f58e
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_text
+label: 'Text element'
+icon_uuid: null
+icon_default: null
+description: 'Define a custom textual element'
+behavior_plugins: {  }

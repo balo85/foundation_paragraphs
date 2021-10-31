@@ -1,0 +1,73 @@
+uuid: 94191118-fed1-45ef-8936-ba1f585f19a7
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_elements
+    - paragraphs.paragraphs_type.foundation_accordions
+    - paragraphs.paragraphs_type.foundation_accordions_tabs
+    - paragraphs.paragraphs_type.foundation_cell
+    - paragraphs.paragraphs_type.foundation_cta_banner
+    - paragraphs.paragraphs_type.foundation_highlight
+    - paragraphs.paragraphs_type.foundation_image
+    - paragraphs.paragraphs_type.foundation_separator
+    - paragraphs.paragraphs_type.foundation_text
+  module:
+    - entity_reference_revisions
+id: paragraph.foundation_cell.field_foundation_elements
+field_name: field_foundation_elements
+entity_type: paragraph
+bundle: foundation_cell
+label: Elements
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      foundation_text: foundation_text
+      foundation_image: foundation_image
+      foundation_separator: foundation_separator
+      foundation_accordions: foundation_accordions
+      foundation_accordions_tabs: foundation_accordions_tabs
+      foundation_highlight: foundation_highlight
+      foundation_cta_banner: foundation_cta_banner
+    target_bundles_drag_drop:
+      foundation_accordion:
+        weight: -14
+        enabled: false
+      foundation_accordion_tab:
+        weight: -13
+        enabled: false
+      foundation_accordions:
+        enabled: true
+        weight: -20
+      foundation_accordions_tabs:
+        enabled: true
+        weight: -19
+      foundation_cell:
+        weight: -16
+        enabled: false
+      foundation_cta_banner:
+        enabled: true
+        weight: -17
+      foundation_grid:
+        weight: -15
+        enabled: false
+      foundation_highlight:
+        enabled: true
+        weight: -18
+      foundation_image:
+        enabled: true
+        weight: -22
+      foundation_separator:
+        enabled: true
+        weight: -21
+      foundation_text:
+        enabled: true
+        weight: -23
+field_type: entity_reference_revisions

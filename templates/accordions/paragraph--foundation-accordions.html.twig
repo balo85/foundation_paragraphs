@@ -1,0 +1,25 @@
+{##
+ # Twig for the Accordions paragraphs
+ # Based on the Zurb Foundation Accordion (https://get.foundation/sites/docs/accordion.html)
+#}
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  'paragraphId-' ~ paragraph.id(),
+]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <ul class="accordion"
+          data-accordion
+          data-multi-expand="{{ (content.field_foundation_multi_expand[0]['#markup'] == 1) ? 'true' : 'false' }}"
+          data-allow-all-closed="{{ (content.field_foundation_all_closed[0]['#markup'] == 1) ? 'true' : 'false' }}">
+        {{ content.field_foundation_items }}
+      </ul>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

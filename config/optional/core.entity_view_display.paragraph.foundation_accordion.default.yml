@@ -1,0 +1,35 @@
+uuid: c7bb571f-8841-4177-ab14-1cdf11c94933
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_accordion.field_foundation_active
+    - field.field.paragraph.foundation_accordion.field_foundation_items
+    - field.field.paragraph.foundation_accordion.field_foundation_title
+    - paragraphs.paragraphs_type.foundation_accordion
+  module:
+    - entity_reference_revisions
+id: paragraph.foundation_accordion.default
+targetEntityType: paragraph
+bundle: foundation_accordion
+mode: default
+content:
+  field_foundation_items:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_foundation_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_foundation_active: true

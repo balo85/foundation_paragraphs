@@ -1,0 +1,63 @@
+uuid: 658bc56c-644f-420d-b737-fde931a3f0ef
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_size_small
+field_name: field_foundation_size_small
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '1 cell'
+    -
+      value: '2'
+      label: '2 cells'
+    -
+      value: '3'
+      label: '3 cells'
+    -
+      value: '4'
+      label: '4 cells'
+    -
+      value: '5'
+      label: '5 cells'
+    -
+      value: '6'
+      label: '6 cells'
+    -
+      value: '7'
+      label: '7 cells'
+    -
+      value: '8'
+      label: '8 cells'
+    -
+      value: '9'
+      label: '9 cells'
+    -
+      value: '10'
+      label: '10 cells'
+    -
+      value: '11'
+      label: '11 cells'
+    -
+      value: '12'
+      label: '12 cells'
+    -
+      value: auto
+      label: 'Auto (take up the remaining space)'
+    -
+      value: shrink
+      label: 'Shrink (take up the space needed)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

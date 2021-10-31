@@ -1,0 +1,42 @@
+uuid: f01842bc-a37a-40cb-a138-30c5742000e9
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_cell.field_foundation_classes
+    - field.field.paragraph.foundation_cell.field_foundation_elements
+    - field.field.paragraph.foundation_cell.field_foundation_id
+    - field.field.paragraph.foundation_cell.field_foundation_offset_large
+    - field.field.paragraph.foundation_cell.field_foundation_offset_medium
+    - field.field.paragraph.foundation_cell.field_foundation_offset_small
+    - field.field.paragraph.foundation_cell.field_foundation_size_large
+    - field.field.paragraph.foundation_cell.field_foundation_size_medium
+    - field.field.paragraph.foundation_cell.field_foundation_size_small
+    - field.field.paragraph.foundation_cell.field_foundation_vert_align_self
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - entity_reference_revisions
+id: paragraph.foundation_cell.default
+targetEntityType: paragraph
+bundle: foundation_cell
+mode: default
+content:
+  field_foundation_elements:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_foundation_classes: true
+  field_foundation_id: true
+  field_foundation_offset_large: true
+  field_foundation_offset_medium: true
+  field_foundation_offset_small: true
+  field_foundation_size_large: true
+  field_foundation_size_medium: true
+  field_foundation_size_small: true
+  field_foundation_vert_align_self: true

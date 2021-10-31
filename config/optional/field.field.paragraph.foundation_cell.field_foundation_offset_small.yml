@@ -1,0 +1,23 @@
+uuid: 96b5da25-4406-4e5a-b36d-03026acfa003
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_offset_small
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_offset_small
+field_name: field_foundation_offset_small
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Offsets on small'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

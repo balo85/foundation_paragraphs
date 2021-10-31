@@ -1,0 +1,23 @@
+uuid: d64c52e9-924e-41e3-9887-6d1840c730a3
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_vert_align
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - options
+id: paragraph.foundation_grid.field_foundation_vert_align
+field_name: field_foundation_vert_align
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Vertical alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

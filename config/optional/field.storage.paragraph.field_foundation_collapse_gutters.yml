@@ -1,0 +1,33 @@
+uuid: 01e7975b-930e-46a1-af92-f69eb3b52a28
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_collapse_gutters
+field_name: field_foundation_collapse_gutters
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: 'No collapse'
+    -
+      value: small
+      label: 'From small to up'
+    -
+      value: medium
+      label: 'From medium to up'
+    -
+      value: large
+      label: 'From large to up'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

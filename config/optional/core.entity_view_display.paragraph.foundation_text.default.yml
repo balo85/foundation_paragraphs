@@ -1,0 +1,22 @@
+uuid: 46ff7679-cc9a-45bd-8a26-2cf62123eb73
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_text.field_foundation_text
+    - paragraphs.paragraphs_type.foundation_text
+  module:
+    - text
+id: paragraph.foundation_text.default
+targetEntityType: paragraph
+bundle: foundation_text
+mode: default
+content:
+  field_foundation_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

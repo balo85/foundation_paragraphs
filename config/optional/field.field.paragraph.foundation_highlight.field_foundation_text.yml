@@ -1,0 +1,21 @@
+uuid: d0908ad0-2a58-45d4-9714-3d9a3b31194f
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_text
+    - paragraphs.paragraphs_type.foundation_highlight
+  module:
+    - text
+id: paragraph.foundation_highlight.field_foundation_text
+field_name: field_foundation_text
+entity_type: paragraph
+bundle: foundation_highlight
+label: 'Text element'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

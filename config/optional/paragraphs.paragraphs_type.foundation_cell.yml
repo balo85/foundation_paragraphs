@@ -1,0 +1,10 @@
+uuid: aef09b75-034a-43be-8db4-e5bbe0c8828c
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_cell
+label: 'Foundation Cell'
+icon_uuid: null
+icon_default: null
+description: 'Define a single cell of a XY Grid'
+behavior_plugins: {  }

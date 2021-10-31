@@ -1,0 +1,33 @@
+uuid: a368b751-01d5-4f11-b13c-1197af1f27c0
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_bottom_margin
+field_name: field_foundation_bottom_margin
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: None
+    -
+      value: s
+      label: Small
+    -
+      value: m
+      label: Medium
+    -
+      value: l
+      label: Large
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

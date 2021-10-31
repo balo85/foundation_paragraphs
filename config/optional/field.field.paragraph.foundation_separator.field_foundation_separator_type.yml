@@ -1,0 +1,23 @@
+uuid: c119c22d-182e-45f4-a7c5-3981642b5ec6
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_separator_type
+    - paragraphs.paragraphs_type.foundation_separator
+  module:
+    - options
+id: paragraph.foundation_separator.field_foundation_separator_type
+field_name: field_foundation_separator_type
+entity_type: paragraph
+bundle: foundation_separator
+label: 'Separator type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: lineDark
+default_value_callback: ''
+settings: {  }
+field_type: list_string

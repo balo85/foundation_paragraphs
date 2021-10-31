@@ -1,0 +1,33 @@
+uuid: 83db0809-2dc2-450d-83f2-9aba0f85e21c
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_top_margin
+field_name: field_foundation_top_margin
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: None
+    -
+      value: s
+      label: Small
+    -
+      value: m
+      label: Medium
+    -
+      value: l
+      label: Large
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

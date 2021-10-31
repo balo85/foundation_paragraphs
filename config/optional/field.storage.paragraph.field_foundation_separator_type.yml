@@ -1,0 +1,30 @@
+uuid: 01fa502a-b678-4a0a-886f-5627b130ae4c
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_separator_type
+field_name: field_foundation_separator_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: transparent
+      label: 'Transparent (simple spacer)'
+    -
+      value: lineDark
+      label: 'Line - dark color'
+    -
+      value: lineLight
+      label: 'Line - light color'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

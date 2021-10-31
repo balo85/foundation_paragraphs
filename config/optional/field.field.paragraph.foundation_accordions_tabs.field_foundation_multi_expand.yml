@@ -1,0 +1,23 @@
+uuid: 606c882a-6b4a-4d74-a715-35516a52946e
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_multi_expand
+    - paragraphs.paragraphs_type.foundation_accordions_tabs
+id: paragraph.foundation_accordions_tabs.field_foundation_multi_expand
+field_name: field_foundation_multi_expand
+entity_type: paragraph
+bundle: foundation_accordions_tabs
+label: 'Multi expand'
+description: 'Can have multiple accordions opened at the same time'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

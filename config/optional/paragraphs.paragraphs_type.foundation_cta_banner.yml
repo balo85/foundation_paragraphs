@@ -1,0 +1,10 @@
+uuid: 96a75c7a-dc9c-42e7-bde9-722e989efa9e
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_cta_banner
+label: 'CTA Banner'
+icon_uuid: null
+icon_default: null
+description: 'Define a custom CTA banner with background image'
+behavior_plugins: {  }

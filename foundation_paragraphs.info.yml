@@ -1,0 +1,16 @@
+name: 'Foundation 6 Utils Paragraphs'
+type: module
+description: 'Define usefull paragraphs to be used with Zurb Foundation 6 theme'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Giovanni Rocchini'
+dependencies:
+  - paragraphs
+  - paragraphs_ee
+  - field_group
+  - entity_reference_revisions
+  - field
+  - language
+  - twig_field_value
+  - twig_tweak
+  - foundation_popup_field_group

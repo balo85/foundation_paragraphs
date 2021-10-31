@@ -1,0 +1,23 @@
+uuid: 430480fa-233f-4542-b921-795e68a01174
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_horiz_align
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - options
+id: paragraph.foundation_grid.field_foundation_horiz_align
+field_name: field_foundation_horiz_align
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Horizontal alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

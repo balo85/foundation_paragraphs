@@ -1,0 +1,33 @@
+uuid: 196d45c7-82b4-4797-938f-cc0875043cde
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_grid_gutters
+field_name: field_foundation_grid_gutters
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: 'No gutters'
+    -
+      value: margin
+      label: 'Margin gutters'
+    -
+      value: padding
+      label: 'Paddings gutters'
+    -
+      value: both
+      label: 'Both margin and padding gutters'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

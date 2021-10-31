@@ -1,0 +1,23 @@
+uuid: ec1a4a66-2e15-4d59-976b-5ca7223fe9ed
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_top_padding
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - options
+id: paragraph.foundation_grid.field_foundation_top_padding
+field_name: field_foundation_top_padding
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Top padding'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

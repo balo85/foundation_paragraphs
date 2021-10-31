@@ -1,0 +1,23 @@
+uuid: f68a546f-04ae-4cd4-99cf-ad0efe55d2fd
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_bottom_padding
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - options
+id: paragraph.foundation_grid.field_foundation_bottom_padding
+field_name: field_foundation_bottom_padding
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Bottom padding'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: 89259c96-7c19-40a7-9410-7566f0aabf4b
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_offset_medium
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_offset_medium
+field_name: field_foundation_offset_medium
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Offsets on medium'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

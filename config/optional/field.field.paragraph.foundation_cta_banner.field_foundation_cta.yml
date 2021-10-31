@@ -1,0 +1,23 @@
+uuid: 18c0580a-e9d8-416a-a7c9-caef890bc809
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_cta
+    - paragraphs.paragraphs_type.foundation_cta_banner
+  module:
+    - link
+id: paragraph.foundation_cta_banner.field_foundation_cta
+field_name: field_foundation_cta
+entity_type: paragraph
+bundle: foundation_cta_banner
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

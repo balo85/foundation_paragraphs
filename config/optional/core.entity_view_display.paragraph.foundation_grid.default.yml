@@ -1,0 +1,46 @@
+uuid: ba9b7c02-c986-4839-8afb-65f33447e683
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_grid.field_foundation_bottom_margin
+    - field.field.paragraph.foundation_grid.field_foundation_bottom_padding
+    - field.field.paragraph.foundation_grid.field_foundation_classes
+    - field.field.paragraph.foundation_grid.field_foundation_collapse_gutters
+    - field.field.paragraph.foundation_grid.field_foundation_grid_cells
+    - field.field.paragraph.foundation_grid.field_foundation_grid_container
+    - field.field.paragraph.foundation_grid.field_foundation_grid_gutters
+    - field.field.paragraph.foundation_grid.field_foundation_horiz_align
+    - field.field.paragraph.foundation_grid.field_foundation_id
+    - field.field.paragraph.foundation_grid.field_foundation_top_margin
+    - field.field.paragraph.foundation_grid.field_foundation_top_padding
+    - field.field.paragraph.foundation_grid.field_foundation_vert_align
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - entity_reference_revisions
+id: paragraph.foundation_grid.default
+targetEntityType: paragraph
+bundle: foundation_grid
+mode: default
+content:
+  field_foundation_grid_cells:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_foundation_bottom_margin: true
+  field_foundation_bottom_padding: true
+  field_foundation_classes: true
+  field_foundation_collapse_gutters: true
+  field_foundation_grid_container: true
+  field_foundation_grid_gutters: true
+  field_foundation_horiz_align: true
+  field_foundation_id: true
+  field_foundation_top_margin: true
+  field_foundation_top_padding: true
+  field_foundation_vert_align: true

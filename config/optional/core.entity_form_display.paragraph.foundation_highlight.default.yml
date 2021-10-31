@@ -1,0 +1,69 @@
+uuid: a7e0f6c5-045f-4db8-af13-f14593e29250
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_highlight.field_foundation_classes
+    - field.field.paragraph.foundation_highlight.field_foundation_id
+    - field.field.paragraph.foundation_highlight.field_foundation_text
+    - paragraphs.paragraphs_type.foundation_highlight
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - status
+        - field_foundation_id
+        - field_foundation_classes
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+id: paragraph.foundation_highlight.default
+targetEntityType: paragraph
+bundle: foundation_highlight
+mode: default
+content:
+  field_foundation_classes:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_foundation_id:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_foundation_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

@@ -1,0 +1,19 @@
+uuid: 6189c861-f935-46f7-8e87-f57c740cc84c
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_title
+    - paragraphs.paragraphs_type.foundation_accordion
+id: paragraph.foundation_accordion.field_foundation_title
+field_name: field_foundation_title
+entity_type: paragraph
+bundle: foundation_accordion
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

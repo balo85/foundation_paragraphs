@@ -1,0 +1,23 @@
+uuid: cb446106-1f02-4b1d-9b3a-ace3bed697fc
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_size_medium
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_size_medium
+field_name: field_foundation_size_medium
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Size on medium'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

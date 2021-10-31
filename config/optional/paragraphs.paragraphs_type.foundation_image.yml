@@ -1,0 +1,10 @@
+uuid: 2f06dac7-0c72-4c4c-aef3-9d91248ccc78
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_image
+label: Image
+icon_uuid: null
+icon_default: null
+description: 'Define a custom image element'
+behavior_plugins: {  }

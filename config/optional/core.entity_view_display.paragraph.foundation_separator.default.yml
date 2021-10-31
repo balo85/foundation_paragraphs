@@ -1,0 +1,30 @@
+uuid: 697c09a5-a63c-4928-860b-55124af31a75
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_separator.field_foundation_bottom_margin
+    - field.field.paragraph.foundation_separator.field_foundation_classes
+    - field.field.paragraph.foundation_separator.field_foundation_id
+    - field.field.paragraph.foundation_separator.field_foundation_separator_type
+    - field.field.paragraph.foundation_separator.field_foundation_top_margin
+    - paragraphs.paragraphs_type.foundation_separator
+  module:
+    - options
+id: paragraph.foundation_separator.default
+targetEntityType: paragraph
+bundle: foundation_separator
+mode: default
+content:
+  field_foundation_separator_type:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden:
+  field_foundation_bottom_margin: true
+  field_foundation_classes: true
+  field_foundation_id: true
+  field_foundation_top_margin: true

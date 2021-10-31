@@ -1,0 +1,83 @@
+uuid: 4092ad45-3cb7-4c6c-96a0-ee4175ab1707
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_accordion.field_foundation_active
+    - field.field.paragraph.foundation_accordion.field_foundation_items
+    - field.field.paragraph.foundation_accordion.field_foundation_title
+    - paragraphs.paragraphs_type.foundation_accordion
+  module:
+    - field_group
+    - paragraphs
+    - paragraphs_ee
+    - paragraphs_features
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - field_foundation_active
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+id: paragraph.foundation_accordion.default
+targetEntityType: paragraph
+bundle: foundation_accordion
+mode: default
+content:
+  field_foundation_active:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_items:
+    weight: 3
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: true
+        split_text: true
+        show_drag_and_drop: true
+      paragraphs_ee:
+        paragraphs_ee:
+          dialog_style: tiles
+          easy_access_count: 2
+          dialog_off_canvas: false
+    type: paragraphs
+    region: content
+  field_foundation_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,26 @@
+uuid: 2d3c3cb8-a863-493d-9b9d-296c7382a839
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_highlight.field_foundation_classes
+    - field.field.paragraph.foundation_highlight.field_foundation_id
+    - field.field.paragraph.foundation_highlight.field_foundation_text
+    - paragraphs.paragraphs_type.foundation_highlight
+  module:
+    - text
+id: paragraph.foundation_highlight.default
+targetEntityType: paragraph
+bundle: foundation_highlight
+mode: default
+content:
+  field_foundation_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_foundation_classes: true
+  field_foundation_id: true

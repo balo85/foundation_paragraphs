@@ -1,0 +1,14 @@
+{##
+ # Twig for the Accordion paragraphs
+ # Based on the Zurb Foundation Accordion (https://get.foundation/sites/docs/accordion.html)
+#}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <li class="accordion-item {{ (content.field_foundation_active[0]['#markup'] == 1) ? 'is-active' : '' }}" data-accordion-item>
+        <a href="#" class="accordion-title">{{ content.field_foundation_title }}</a>
+        <div class="accordion-content" data-tab-content>{{ content.field_foundation_items }}</div>
+      </li>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

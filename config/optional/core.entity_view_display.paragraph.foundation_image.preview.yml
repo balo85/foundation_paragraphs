@@ -1,0 +1,26 @@
+uuid: 2f4879a8-3206-4646-a103-443fe26551a2
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.foundation_image.field_foundation_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.foundation_image
+  module:
+    - image
+id: paragraph.foundation_image.preview
+targetEntityType: paragraph
+bundle: foundation_image
+mode: preview
+content:
+  field_foundation_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

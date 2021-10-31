@@ -1,0 +1,23 @@
+uuid: 1f76f24c-58cd-4191-b048-7e5c1e7f4b6e
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_active
+    - paragraphs.paragraphs_type.foundation_accordion_tab
+id: paragraph.foundation_accordion_tab.field_foundation_active
+field_name: field_foundation_active
+entity_type: paragraph
+bundle: foundation_accordion_tab
+label: Active
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

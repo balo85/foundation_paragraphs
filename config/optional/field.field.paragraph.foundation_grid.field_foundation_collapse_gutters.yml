@@ -1,0 +1,23 @@
+uuid: ccc9159b-76fb-402c-9da7-964e5f542ef9
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_collapse_gutters
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - options
+id: paragraph.foundation_grid.field_foundation_collapse_gutters
+field_name: field_foundation_collapse_gutters
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Collapse gutters'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

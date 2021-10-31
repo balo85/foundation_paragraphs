@@ -1,0 +1,23 @@
+uuid: 0280316c-3fa0-455a-9d19-cc04a5b6c57d
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_size_large
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_size_large
+field_name: field_foundation_size_large
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Size on large'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

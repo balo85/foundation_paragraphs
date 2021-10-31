@@ -1,0 +1,23 @@
+uuid: 78ab3b95-6838-4de5-ab5a-05aa62b49de5
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_offset_large
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_offset_large
+field_name: field_foundation_offset_large
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Offsets on large'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

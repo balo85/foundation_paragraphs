@@ -1,0 +1,23 @@
+{##
+ # Twig for the Foundation Cell paragraphs
+ # Based on the Zurb Foundation XY Grid (https://get.foundation/sites/docs/xy-grid.html)
+ # Based on the Zurb Foundation Flexbox Utilities classes (https://get.foundation/sites/docs/flexbox-utilities.html)
+ #}
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  'paragraphId-' ~ paragraph.id(),
+  'cell'
+]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      {{ content.field_foundation_elements }}
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

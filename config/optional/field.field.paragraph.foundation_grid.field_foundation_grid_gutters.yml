@@ -1,0 +1,23 @@
+uuid: 99f5d7e8-896b-4cf1-b8ba-46350a81cf07
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_grid_gutters
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - options
+id: paragraph.foundation_grid.field_foundation_grid_gutters
+field_name: field_foundation_grid_gutters
+entity_type: paragraph
+bundle: foundation_grid
+label: Gutters
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: margin
+default_value_callback: ''
+settings: {  }
+field_type: list_string

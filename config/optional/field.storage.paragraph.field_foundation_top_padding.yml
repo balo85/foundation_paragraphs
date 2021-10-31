@@ -1,0 +1,33 @@
+uuid: 8f51ee64-80df-454e-a2bc-1ac1e6c11906
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_top_padding
+field_name: field_foundation_top_padding
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: None
+    -
+      value: s
+      label: Small
+    -
+      value: m
+      label: Medium
+    -
+      value: l
+      label: Large
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

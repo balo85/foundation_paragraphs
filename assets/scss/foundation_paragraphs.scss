@@ -1,0 +1,174 @@
+@import "variables";
+
+// Regole generiche applicate ai paragraph di tipo grid per ridurre gli spazi
+.field--widget-paragraphs .draggable.paragraph-type--foundation-grid {
+  tr.drag-previous { background: transparent; }
+
+  td.field-multiple-drag { text-align: center; }
+  a.tabledrag-handle {
+    display: inline-block;
+    float: none;
+    min-width: 20px;
+    padding: 0;
+
+    .handle {
+      width: 16px;
+      height: 22px;
+      margin: 0;
+      padding: 0;
+      background-position: center center;
+    }
+  }
+
+  thead { display: none; }
+}
+
+
+// Stili ad hoc generici
+tr.paragraph-type--foundation-grid {
+  // Stile titolo
+  .form-wrapper.paragraph-top.add-above-on {
+    .paragraph-type, .paragraph-type-label {
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    .paragraphs-badge {
+      width: 30px;
+      height: 20px;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      background: $white;
+
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  // Riga contenente i bottoni
+  tr.paragraphs_ee__add-in-between__row {
+    position: relative !important;
+    height: 30px !important;
+    background: transparent !important;
+
+    > td {
+      position: relative !important;
+      height: 30px !important;
+      background: transparent !important;
+
+      .paragraphs-features__add-in-between__wrapper {
+        top: 50%;
+        transform: translate(0, -70%);
+      }
+    }
+  }
+}
+
+
+// Colori ad hoc per le grid
+tr.paragraph-type--foundation-grid {
+  // Background e spaziatura
+  background: $bluLight !important;
+  border-bottom: 20px solid $white;
+
+  //td { background: $bluLight !important; }
+
+  /*td:first-child:not([style*="display: none;"]),
+  th:first-child:not([style*="display: none;"]) {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  td:last-child:not([style*="display: none;"]),
+  th:last-child:not([style*="display: none;"]) {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }*/
+
+  // Colore titolo
+  .form-wrapper.paragraph-top.add-above-on {
+    .paragraph-type, .paragraph-type-label, .paragraphs-badge { color: $blu; }
+  }
+
+  // Colore popup dei settings
+  .form-wrapper.field-group-popup-fake {
+    background: $bluLight;
+    border-color: $blu;
+
+    > legend {
+      background: $blu;
+      color: $white;
+    }
+
+    .lblCloser {
+      background: $bluLight;
+      color: $blu;
+    }
+  }
+}
+
+
+// Colori ad hoc per le cell
+tr.paragraph-type--foundation-cell {
+  // Background e spaziatura
+  background: $redLight !important;
+  // border-top: 2px dashed $red;
+  // border-right: 2px dashed $red;
+  // border-left: 2px dashed $red;
+  border-bottom: 20px solid $bluLight;
+
+  // Colore titolo
+  .form-wrapper.paragraph-top.add-above-on {
+    .paragraph-type, .paragraph-type-label, .paragraphs-badge { color: $red; }
+  }
+
+  // Stile popup dei settings
+  .form-wrapper.field-group-popup-fake {
+    background: $redLight;
+    border-color: $red;
+
+    > legend {
+      background: $red;
+      color: $white;
+    }
+
+    .lblCloser {
+      background: $redLight;
+      color: $red;
+    }
+  }
+}
+
+
+// Colori ad hoc per gli elementi interni
+tr.paragraph-type--foundation-cell {
+  .field-multiple-table {
+    tr.draggable:not(.paragraphs-features__add-in-between__row):not(.paragraphs-features__add-in-between__row) {
+      // Background e spaziatura
+      background: $white !important;
+      border-bottom: 20px solid $redLight;
+
+      // Colore titolo
+      .form-wrapper.paragraph-top.add-above-on {
+        .paragraph-type, .paragraph-type-label, .paragraphs-badge { color: $green; }
+      }
+
+      // Stile popup dei settings
+      .form-wrapper.field-group-popup-fake {
+        background: $white;
+        border-color: $green;
+
+        > legend {
+          background: $green;
+          color: $white;
+        }
+
+        .lblCloser {
+          background: $white;
+          color: $green;
+        }
+      }
+    }
+  }
+}

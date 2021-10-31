@@ -1,0 +1,23 @@
+uuid: cd02e74d-178a-46bc-abe5-88308fda3b05
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_all_closed
+    - paragraphs.paragraphs_type.foundation_accordions
+id: paragraph.foundation_accordions.field_foundation_all_closed
+field_name: field_foundation_all_closed
+entity_type: paragraph
+bundle: foundation_accordions
+label: 'All closed'
+description: 'Can have all accordions closed at the same time'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

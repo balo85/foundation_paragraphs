@@ -1,0 +1,10 @@
+uuid: cba6dba5-a40c-4e56-b49a-a510de4afffd
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_highlight
+label: Highlight
+icon_uuid: null
+icon_default: null
+description: 'Define a custom highlight element'
+behavior_plugins: {  }

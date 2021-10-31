@@ -1,0 +1,40 @@
+uuid: 50757176-2b5d-43c2-b0d5-814b8cc7e14b
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_grid_cells
+    - paragraphs.paragraphs_type.foundation_cell
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - entity_reference_revisions
+id: paragraph.foundation_grid.field_foundation_grid_cells
+field_name: field_foundation_grid_cells
+entity_type: paragraph
+bundle: foundation_grid
+label: Cells
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      foundation_cell: foundation_cell
+    target_bundles_drag_drop:
+      foundation_cell:
+        enabled: true
+        weight: -9
+      foundation_grid:
+        weight: -8
+        enabled: false
+      foundation_image:
+        weight: -7
+        enabled: false
+      foundation_text:
+        weight: -6
+        enabled: false
+field_type: entity_reference_revisions

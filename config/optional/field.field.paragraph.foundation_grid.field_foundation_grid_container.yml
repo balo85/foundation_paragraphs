@@ -1,0 +1,23 @@
+uuid: 56fbb673-98b8-40cf-9a21-b9370ad9237d
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_grid_container
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - options
+id: paragraph.foundation_grid.field_foundation_grid_container
+field_name: field_foundation_grid_container
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Grid Container'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: standard
+default_value_callback: ''
+settings: {  }
+field_type: list_string

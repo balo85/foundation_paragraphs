@@ -1,0 +1,35 @@
+uuid: b84105a0-62e0-4d7b-978f-3fe9553311c8
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_image.field_foundation_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.foundation_image
+  module:
+    - image
+    - imce
+id: paragraph.foundation_image.default
+targetEntityType: paragraph
+bundle: foundation_image
+mode: default
+content:
+  field_foundation_image:
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

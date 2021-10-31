@@ -1,0 +1,54 @@
+uuid: d8c87d5d-d033-435c-ae11-ce8743501d3f
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_items
+    - paragraphs.paragraphs_type.foundation_accordion_tab
+    - paragraphs.paragraphs_type.foundation_image
+    - paragraphs.paragraphs_type.foundation_text
+  module:
+    - entity_reference_revisions
+id: paragraph.foundation_accordion_tab.field_foundation_items
+field_name: field_foundation_items
+entity_type: paragraph
+bundle: foundation_accordion_tab
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      foundation_text: foundation_text
+      foundation_image: foundation_image
+    target_bundles_drag_drop:
+      foundation_accordion:
+        weight: -15
+        enabled: false
+      foundation_accordion_tab:
+        weight: -12
+        enabled: false
+      foundation_accordions:
+        weight: -14
+        enabled: false
+      foundation_accordions_tabs:
+        weight: -13
+        enabled: false
+      foundation_cell:
+        weight: -11
+        enabled: false
+      foundation_grid:
+        weight: -10
+        enabled: false
+      foundation_image:
+        enabled: true
+        weight: -16
+      foundation_text:
+        enabled: true
+        weight: -17
+field_type: entity_reference_revisions

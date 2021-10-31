@@ -1,0 +1,10 @@
+uuid: 79f54804-90e2-441e-ab7c-60abe6c6a5b0
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_accordion_tab
+label: 'Responsive Accordion Tab'
+icon_uuid: null
+icon_default: null
+description: 'Define a custom Zurb Foundation Responsive Accordion Tab item'
+behavior_plugins: {  }

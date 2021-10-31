@@ -1,0 +1,101 @@
+uuid: aa56f19d-c9f0-4705-b22f-b369a2122451
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_all_closed
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_all_collapsed
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_items
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_multi_expand
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_tabs_from
+    - paragraphs.paragraphs_type.foundation_accordions_tabs
+  module:
+    - field_group
+    - paragraphs
+    - paragraphs_ee
+    - paragraphs_features
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - field_foundation_tabs_from
+        - field_foundation_all_closed
+        - field_foundation_multi_expand
+        - field_foundation_all_collapsed
+        - field_foundation_vertical_tabs
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+id: paragraph.foundation_accordions_tabs.default
+targetEntityType: paragraph
+bundle: foundation_accordions_tabs
+mode: default
+content:
+  field_foundation_all_closed:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_all_collapsed:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_items:
+    weight: 10
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: foundation_accordion_tab
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        add_in_between: true
+        split_text: true
+        show_drag_and_drop: true
+      paragraphs_ee:
+        paragraphs_ee:
+          dialog_style: tiles
+          easy_access_count: 2
+          dialog_off_canvas: false
+    type: paragraphs
+    region: content
+  field_foundation_multi_expand:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_tabs_from:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

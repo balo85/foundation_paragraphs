@@ -1,0 +1,11 @@
+admin_styles:
+  version: 1.0
+  css:
+    base:
+      assets/css/foundation_paragraphs.css: {}
+  js:
+    assets/js/foundation_paragraphs.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

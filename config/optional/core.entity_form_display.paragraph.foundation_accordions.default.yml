@@ -1,0 +1,83 @@
+uuid: 08cee944-3dfc-4f30-a9cd-edeff8ac41e8
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_accordions.field_foundation_all_closed
+    - field.field.paragraph.foundation_accordions.field_foundation_items
+    - field.field.paragraph.foundation_accordions.field_foundation_multi_expand
+    - paragraphs.paragraphs_type.foundation_accordions
+  module:
+    - field_group
+    - paragraphs
+    - paragraphs_ee
+    - paragraphs_features
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - field_foundation_all_closed
+        - field_foundation_multi_expand
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+id: paragraph.foundation_accordions.default
+targetEntityType: paragraph
+bundle: foundation_accordions
+mode: default
+content:
+  field_foundation_all_closed:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_items:
+    type: paragraphs
+    weight: 3
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: closed_expand_nested
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: modal
+      form_display_mode: default
+      default_paragraph_type: foundation_accordion
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings:
+      paragraphs_features:
+        delete_confirmation: true
+        split_text: true
+        show_drag_and_drop: true
+        add_in_between: false
+      paragraphs_ee:
+        paragraphs_ee:
+          dialog_style: tiles
+          easy_access_count: 2
+          dialog_off_canvas: false
+    region: content
+  field_foundation_multi_expand:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,20 @@
+{
+    "name": "balo85/foundation_paragraphs",
+    "description": "Define usefull paragraphs to be used with Zurb Foundation 6 theme",
+    "type": "drupal-module",
+    "homepage": "http://www.giovannirocchini.it",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Giovanni Rocchini",
+            "email": "giovanni.rocchini@gmail.com"
+        }
+    ],
+    "require": {
+        "drupal/core": "^8.6 || ^9",
+        "drupal/paragraphs_ee": "^1.8",
+        "drupal/field_group": "^3.2",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^3.1"
+    }
+}

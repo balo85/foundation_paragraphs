@@ -1,0 +1,102 @@
+uuid: d8e26bfe-d92c-47f2-875a-31f5702b5bd5
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_cta_banner.field_foundation_classes
+    - field.field.paragraph.foundation_cta_banner.field_foundation_cta
+    - field.field.paragraph.foundation_cta_banner.field_foundation_id
+    - field.field.paragraph.foundation_cta_banner.field_foundation_image
+    - field.field.paragraph.foundation_cta_banner.field_foundation_text
+    - field.field.paragraph.foundation_cta_banner.field_foundation_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.foundation_cta_banner
+  module:
+    - field_group
+    - image
+    - imce
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - status
+        - field_foundation_id
+        - field_foundation_classes
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+id: paragraph.foundation_cta_banner.default
+targetEntityType: paragraph
+bundle: foundation_cta_banner
+mode: default
+content:
+  field_foundation_classes:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_foundation_cta:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_foundation_id:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_foundation_image:
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_foundation_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_foundation_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

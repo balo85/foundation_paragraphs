@@ -1,0 +1,66 @@
+uuid: c72aba1e-ac6a-4bbc-9414-c5c9cf46a5dc
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_all_closed
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_all_collapsed
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_items
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_multi_expand
+    - field.field.paragraph.foundation_accordions_tabs.field_foundation_tabs_from
+    - paragraphs.paragraphs_type.foundation_accordions_tabs
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.foundation_accordions_tabs.default
+targetEntityType: paragraph
+bundle: foundation_accordions_tabs
+mode: default
+content:
+  field_foundation_all_closed:
+    weight: 0
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_foundation_all_collapsed:
+    weight: 2
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_foundation_items:
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_foundation_multi_expand:
+    weight: 1
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_foundation_tabs_from:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

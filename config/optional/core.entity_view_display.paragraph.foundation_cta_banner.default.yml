@@ -1,0 +1,59 @@
+uuid: 8b212c1e-e41a-46f8-a6b2-abced8b84361
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_cta_banner.field_foundation_classes
+    - field.field.paragraph.foundation_cta_banner.field_foundation_cta
+    - field.field.paragraph.foundation_cta_banner.field_foundation_id
+    - field.field.paragraph.foundation_cta_banner.field_foundation_image
+    - field.field.paragraph.foundation_cta_banner.field_foundation_text
+    - field.field.paragraph.foundation_cta_banner.field_foundation_title
+    - paragraphs.paragraphs_type.foundation_cta_banner
+  module:
+    - image
+    - link
+    - text
+id: paragraph.foundation_cta_banner.default
+targetEntityType: paragraph
+bundle: foundation_cta_banner
+mode: default
+content:
+  field_foundation_cta:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 255
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_foundation_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_foundation_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_foundation_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_foundation_classes: true
+  field_foundation_id: true

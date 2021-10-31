@@ -1,0 +1,23 @@
+uuid: 523fc195-f1e3-499b-a2a9-d09a5561c59a
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_top_margin
+    - paragraphs.paragraphs_type.foundation_separator
+  module:
+    - options
+id: paragraph.foundation_separator.field_foundation_top_margin
+field_name: field_foundation_top_margin
+entity_type: paragraph
+bundle: foundation_separator
+label: 'Top margin'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: s
+default_value_callback: ''
+settings: {  }
+field_type: list_string

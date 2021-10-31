@@ -1,0 +1,23 @@
+uuid: 4cacaddb-09c2-470a-940a-9178aae5b17c
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_tabs_from
+    - paragraphs.paragraphs_type.foundation_accordions_tabs
+  module:
+    - options
+id: paragraph.foundation_accordions_tabs.field_foundation_tabs_from
+field_name: field_foundation_tabs_from
+entity_type: paragraph
+bundle: foundation_accordions_tabs
+label: 'Tabs from'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: large
+default_value_callback: ''
+settings: {  }
+field_type: list_string

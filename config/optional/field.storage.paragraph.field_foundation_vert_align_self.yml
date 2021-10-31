@@ -1,0 +1,36 @@
+uuid: 102d2142-4824-45ba-b923-b0cac4cb0bb5
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_vert_align_self
+field_name: field_foundation_vert_align_self
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: None
+    -
+      value: top
+      label: Top
+    -
+      value: middle
+      label: Middle
+    -
+      value: bottom
+      label: Bottom
+    -
+      value: stretch
+      label: Stretch
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

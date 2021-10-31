@@ -1,0 +1,27 @@
+uuid: 4937a387-e003-45ea-8c44-10e460a1ce3e
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.foundation_highlight.field_foundation_classes
+    - field.field.paragraph.foundation_highlight.field_foundation_id
+    - field.field.paragraph.foundation_highlight.field_foundation_text
+    - paragraphs.paragraphs_type.foundation_highlight
+  module:
+    - text
+id: paragraph.foundation_highlight.preview
+targetEntityType: paragraph
+bundle: foundation_highlight
+mode: preview
+content:
+  field_foundation_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_foundation_classes: true
+  field_foundation_id: true
