@@ -12,16 +12,16 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: none
+      value: 0
       label: None
     -
-      value: s
+      value: 1
       label: Small
     -
-      value: m
+      value: 2
       label: Medium
     -
-      value: l
+      value: 3
       label: Large
   allowed_values_function: ''
 module: options
