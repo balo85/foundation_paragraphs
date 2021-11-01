@@ -29,14 +29,12 @@ function foundation_paragraphs_theme_registry_alter(&$theme_registry){
   $modulePath   = drupal_get_path('module', 'foundation_paragraphs');
   $themePath    = drupal_get_path('theme', $actTheme);
 
-  //Prima fase, itero i twig del modulo
   $dir = $modulePath . '/templates';
   if(is_dir($dir)) {
     $moduleFiles  = $fsService->scanDirectory($dir, '/' . preg_quote($extension) . '$/');
     _foundation_paragraphs_theme_registry_alter_partial($theme_registry, $moduleFiles, $extension, $modulePath, 'module', $fsService);
   }
 
-  //Seconda fase, itero i twig del tema
   $dir = $themePath . '/templates/paragraphs';
   if(is_dir($dir)) {
     $themeFiles   = $fsService->scanDirectory($dir, '/' . preg_quote($extension) . '$/');

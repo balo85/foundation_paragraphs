@@ -1,5 +1,8 @@
 # Paragraphs
-Define a bunch of custom paragraphs for Zurb Foundation
+Define a bundle of custom paragraphs for Zurb Foundation
+
+
+
 
 
 ## Require

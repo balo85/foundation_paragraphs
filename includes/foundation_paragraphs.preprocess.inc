@@ -25,20 +25,18 @@ function foundation_paragraphs_preprocess_paragraph(&$variables) {
 }
 
 /**
- * Variabili comuni
- * Elabora eventuali id e classi custom aggiuntive impostate manualmente
+ * Common variables
+ * Manage custom ID and classes
  *
  * @param $variables
  * @param $paragraph
  */
 function _bp_preprocessParagraph_commonInfos(&$variables, $paragraph) {
-  // Gestisco eventuali id custom ad hoc
   if($paragraph->hasField('field_foundation_id')) {
     $strId = (!$paragraph->field_foundation_id->isEmpty()) ? trim((string)$paragraph->field_foundation_id->getString()) : '';
     if($strId !== '') { $variables['attributes']['id'] = $strId; }
   }
 
-  // Gestisco eventuali classi custom ad hoc
   if($paragraph->hasField('field_foundation_classes')) {
     $strCls   = (!$paragraph->field_foundation_classes->isEmpty()) ? trim((string)$paragraph->field_foundation_classes->getString()) : '';
     $classes  = ($strCls !== '') ? explode(" ", $strCls) : null;
@@ -49,8 +47,8 @@ function _bp_preprocessParagraph_commonInfos(&$variables, $paragraph) {
 }
 
 /**
- * Variabili comuni
- * Elabora eventuali classi per spaziature come padding e margin superiori ed inferiori
+ * Common variables
+ * Manage custom classes to give margin and padding, both top and bottom
  *
  * @param $variables
  * @param $paragraph
@@ -78,8 +76,8 @@ function _bp_preprocessParagraph_topBottomSpaces(&$variables, $paragraph) {
 }
 
 /**
- * Variabili di grid
- * Elabora le variabili per definire il tipo di contanier ed il gutter
+ * Grid variables
+ * Manage variables used to define container type, gutter and aligns
  *
  * Container: none / standard / fluid / full
  * Gutter: none / margin / padding / both
@@ -100,7 +98,6 @@ function _bp_preprocessParagraph_gridEnhancer(&$variables, $paragraph) {
   $strHorizAlign = (!$paragraph->field_foundation_horiz_align->isEmpty()) ? trim((string)$paragraph->field_foundation_horiz_align->getString()) : 'none';
   $variables['horizAlign'] = ($strHorizAlign !== 'none') ? 'align-'.$strHorizAlign : '';
 
-  // Gestione gutter
   $strGutter      = (!$paragraph->field_foundation_grid_gutters->isEmpty()) ? trim((string)$paragraph->field_foundation_grid_gutters->getString()) : 'margin';
   $strGutCollapse = (!$paragraph->field_foundation_collapse_gutt->isEmpty()) ? trim((string)$paragraph->field_foundation_collapse_gutt->getString()) : 'none';
   switch($strGutter) {
@@ -125,8 +122,8 @@ function _bp_preprocessParagraph_gridEnhancer(&$variables, $paragraph) {
 }
 
 /**
- * Variabili di cell
- * Elabora le classi per definire allineamento, spazio ed offset della singola cella
+ * Cell variables
+ * Manage variables used to define alignment, spaces and offset
  *
  * @param $variables
  * @param $paragraph
