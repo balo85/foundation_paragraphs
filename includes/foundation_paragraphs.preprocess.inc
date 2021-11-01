@@ -102,7 +102,7 @@ function _bp_preprocessParagraph_gridEnhancer(&$variables, $paragraph) {
 
   // Gestione gutter
   $strGutter      = (!$paragraph->field_foundation_grid_gutters->isEmpty()) ? trim((string)$paragraph->field_foundation_grid_gutters->getString()) : 'margin';
-  $strGutCollapse = (!$paragraph->field_foundation_collapse_gutters->isEmpty()) ? trim((string)$paragraph->field_foundation_collapse_gutters->getString()) : 'none';
+  $strGutCollapse = (!$paragraph->field_foundation_collapse_gutt->isEmpty()) ? trim((string)$paragraph->field_foundation_collapse_gutt->getString()) : 'none';
   switch($strGutter) {
     case 'margin':
       $variables['gutterType']      = 'grid-margin-x';
@@ -149,7 +149,7 @@ function _bp_preprocessParagraph_cellEnhancer(&$variables, $paragraph) {
   $classes[]  = _bp_preprocessParagraph_cellEnhancer_getSize($strSizeL, 'large');
   $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOffset($strOffL, 'large');
 
-  $strVertAlign = (!$paragraph->field_foundation_vert_align_self->isEmpty()) ? trim((string)$paragraph->field_foundation_vert_align_self->getString()) : 'none';
+  $strVertAlign = (!$paragraph->field_foundation_vert_al_self->isEmpty()) ? trim((string)$paragraph->field_foundation_vert_al_self->getString()) : 'none';
   $classes[]    = ($strVertAlign !== 'none') ? 'align-self-'.$strVertAlign : '';
 
   // Aggiungo tutte le classi elaborate

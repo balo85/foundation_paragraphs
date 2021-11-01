@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.foundation_separator.field_foundation_bottom_margin
     - field.field.paragraph.foundation_separator.field_foundation_classes
     - field.field.paragraph.foundation_separator.field_foundation_id
-    - field.field.paragraph.foundation_separator.field_foundation_separator_type
+    - field.field.paragraph.foundation_separator.field_foundation_separ_type
     - field.field.paragraph.foundation_separator.field_foundation_top_margin
     - paragraphs.paragraphs_type.foundation_separator
   module:
@@ -56,7 +56,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_foundation_separator_type:
+  field_foundation_separ_type:
     weight: 5
     settings: {  }
     third_party_settings: {  }

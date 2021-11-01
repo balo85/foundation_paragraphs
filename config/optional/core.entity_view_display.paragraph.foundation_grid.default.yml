@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.foundation_grid.field_foundation_bottom_margin
     - field.field.paragraph.foundation_grid.field_foundation_bottom_padding
     - field.field.paragraph.foundation_grid.field_foundation_classes
-    - field.field.paragraph.foundation_grid.field_foundation_collapse_gutters
+    - field.field.paragraph.foundation_grid.field_foundation_collapse_gutt
     - field.field.paragraph.foundation_grid.field_foundation_grid_cells
     - field.field.paragraph.foundation_grid.field_foundation_grid_container
     - field.field.paragraph.foundation_grid.field_foundation_grid_gutters
@@ -36,7 +36,7 @@ hidden:
   field_foundation_bottom_margin: true
   field_foundation_bottom_padding: true
   field_foundation_classes: true
-  field_foundation_collapse_gutters: true
+  field_foundation_collapse_gutt: true
   field_foundation_grid_container: true
   field_foundation_grid_gutters: true
   field_foundation_horiz_align: true

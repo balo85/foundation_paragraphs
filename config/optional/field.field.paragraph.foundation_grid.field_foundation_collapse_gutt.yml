@@ -3,12 +3,12 @@ langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_foundation_collapse_gutters
+    - field.storage.paragraph.field_foundation_collapse_gutt
     - paragraphs.paragraphs_type.foundation_grid
   module:
     - options
-id: paragraph.foundation_grid.field_foundation_collapse_gutters
-field_name: field_foundation_collapse_gutters
+id: paragraph.foundation_grid.field_foundation_collapse_gutt
+field_name: field_foundation_collapse_gutt
 entity_type: paragraph
 bundle: foundation_grid
 label: 'Collapse gutters'

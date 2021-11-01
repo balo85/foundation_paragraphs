@@ -3,12 +3,12 @@ langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_foundation_separator_type
+    - field.storage.paragraph.field_foundation_separ_type
     - paragraphs.paragraphs_type.foundation_separator
   module:
     - options
-id: paragraph.foundation_separator.field_foundation_separator_type
-field_name: field_foundation_separator_type
+id: paragraph.foundation_separator.field_foundation_separ_type
+field_name: field_foundation_separ_type
 entity_type: paragraph
 bundle: foundation_separator
 label: 'Separator type'

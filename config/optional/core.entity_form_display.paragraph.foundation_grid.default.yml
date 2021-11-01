@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.foundation_grid.field_foundation_bottom_margin
     - field.field.paragraph.foundation_grid.field_foundation_bottom_padding
     - field.field.paragraph.foundation_grid.field_foundation_classes
-    - field.field.paragraph.foundation_grid.field_foundation_collapse_gutters
+    - field.field.paragraph.foundation_grid.field_foundation_collapse_gutt
     - field.field.paragraph.foundation_grid.field_foundation_grid_cells
     - field.field.paragraph.foundation_grid.field_foundation_grid_container
     - field.field.paragraph.foundation_grid.field_foundation_grid_gutters
@@ -30,7 +30,7 @@ third_party_settings:
         - field_foundation_classes
         - field_foundation_grid_container
         - field_foundation_grid_gutters
-        - field_foundation_collapse_gutters
+        - field_foundation_collapse_gutt
       parent_name: ''
       weight: 0
       format_type: popup_fake
@@ -102,7 +102,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_foundation_collapse_gutters:
+  field_foundation_collapse_gutt:
     weight: 19
     settings: {  }
     third_party_settings: {  }

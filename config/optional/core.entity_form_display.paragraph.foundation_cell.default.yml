@@ -12,7 +12,7 @@ dependencies:
     - field.field.paragraph.foundation_cell.field_foundation_size_large
     - field.field.paragraph.foundation_cell.field_foundation_size_medium
     - field.field.paragraph.foundation_cell.field_foundation_size_small
-    - field.field.paragraph.foundation_cell.field_foundation_vert_align_self
+    - field.field.paragraph.foundation_cell.field_foundation_vert_al_self
     - paragraphs.paragraphs_type.foundation_cell
   module:
     - field_group
@@ -26,7 +26,7 @@ third_party_settings:
         - status
         - field_foundation_id
         - field_foundation_classes
-        - field_foundation_vert_align_self
+        - field_foundation_vert_al_self
       parent_name: ''
       weight: 0
       format_type: popup_fake
@@ -145,7 +145,7 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_foundation_vert_align_self:
+  field_foundation_vert_al_self:
     weight: 7
     settings: {  }
     third_party_settings: {  }

@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.foundation_separator.field_foundation_bottom_margin
     - field.field.paragraph.foundation_separator.field_foundation_classes
     - field.field.paragraph.foundation_separator.field_foundation_id
-    - field.field.paragraph.foundation_separator.field_foundation_separator_type
+    - field.field.paragraph.foundation_separator.field_foundation_separ_type
     - field.field.paragraph.foundation_separator.field_foundation_top_margin
     - paragraphs.paragraphs_type.foundation_separator
   module:
@@ -16,7 +16,7 @@ targetEntityType: paragraph
 bundle: foundation_separator
 mode: default
 content:
-  field_foundation_separator_type:
+  field_foundation_separ_type:
     weight: 0
     label: hidden
     settings: {  }

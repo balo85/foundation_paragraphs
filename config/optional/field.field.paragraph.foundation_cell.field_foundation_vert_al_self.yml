@@ -3,12 +3,12 @@ langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_foundation_vert_align_self
+    - field.storage.paragraph.field_foundation_vert_al_self
     - paragraphs.paragraphs_type.foundation_cell
   module:
     - options
-id: paragraph.foundation_cell.field_foundation_vert_align_self
-field_name: field_foundation_vert_align_self
+id: paragraph.foundation_cell.field_foundation_vert_al_self
+field_name: field_foundation_vert_al_self
 entity_type: paragraph
 bundle: foundation_cell
 label: 'Vertical alignment self'

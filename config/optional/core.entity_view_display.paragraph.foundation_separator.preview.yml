@@ -7,7 +7,7 @@ dependencies:
     - field.field.paragraph.foundation_separator.field_foundation_bottom_margin
     - field.field.paragraph.foundation_separator.field_foundation_classes
     - field.field.paragraph.foundation_separator.field_foundation_id
-    - field.field.paragraph.foundation_separator.field_foundation_separator_type
+    - field.field.paragraph.foundation_separator.field_foundation_separ_type
     - field.field.paragraph.foundation_separator.field_foundation_top_margin
     - paragraphs.paragraphs_type.foundation_separator
   module:
@@ -24,7 +24,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_foundation_separator_type:
+  field_foundation_separ_type:
     weight: 2
     label: hidden
     settings: {  }
