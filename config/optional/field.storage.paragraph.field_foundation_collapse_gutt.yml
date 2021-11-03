@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: T13G6gtWJHELJPzgtT_kQNeDHpC1PNcuJCntc7ezAr8
 id: paragraph.field_foundation_collapse_gutt
 field_name: field_foundation_collapse_gutt
 entity_type: paragraph

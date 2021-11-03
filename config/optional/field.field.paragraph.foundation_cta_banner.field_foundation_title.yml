@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_foundation_title
     - paragraphs.paragraphs_type.foundation_cta_banner
+_core:
+  default_config_hash: xVMFWRHeQEFQjYOolK6OP-XP0Ea3EHT2GPxLEGlg6d8
 id: paragraph.foundation_cta_banner.field_foundation_title
 field_name: field_foundation_title
 entity_type: paragraph

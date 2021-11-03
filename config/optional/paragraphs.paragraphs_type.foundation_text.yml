@@ -2,6 +2,8 @@ uuid: 95c7547b-dc4b-46b1-a7ab-7b3f6b47f58e
 langcode: it
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: LccSum2fJczxiPsLd1FrQ2Kx826LavgPwXwFEjczXJs
 id: foundation_text
 label: 'Text element'
 icon_uuid: null

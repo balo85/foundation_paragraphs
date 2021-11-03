@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_accordions_tabs
   module:
     - options
+_core:
+  default_config_hash: 4emN2YwpAloi9MJo8a40_6AEcLv4AlrBrdTe0c3Uow4
 id: paragraph.foundation_accordions_tabs.field_foundation_tabs_from
 field_name: field_foundation_tabs_from
 entity_type: paragraph

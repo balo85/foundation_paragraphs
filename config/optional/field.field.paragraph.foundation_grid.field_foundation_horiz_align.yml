@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_grid
   module:
     - options
+_core:
+  default_config_hash: v0xUYlJ53XlXO6Vs48RJDo5YXXAmDT2lGPMmTjp3k5E
 id: paragraph.foundation_grid.field_foundation_horiz_align
 field_name: field_foundation_horiz_align
 entity_type: paragraph

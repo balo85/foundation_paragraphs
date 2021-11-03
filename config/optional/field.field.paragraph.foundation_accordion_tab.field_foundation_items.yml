@@ -9,6 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_text
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: qjd9jEHiMHJcbaPZ_kPZXfvfLBCoG3X9wK5_QGhTpBI
 id: paragraph.foundation_accordion_tab.field_foundation_items
 field_name: field_foundation_items
 entity_type: paragraph

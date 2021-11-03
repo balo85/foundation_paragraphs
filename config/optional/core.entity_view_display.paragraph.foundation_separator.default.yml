@@ -11,6 +11,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_separator
   module:
     - options
+_core:
+  default_config_hash: zO3Cx94Ezr18qrl2zioVAIJSMPjYREFxb6t78mnFIyI
 id: paragraph.foundation_separator.default
 targetEntityType: paragraph
 bundle: foundation_separator

@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_cta_banner
   module:
     - link
+_core:
+  default_config_hash: 7j3uk7Ni-gCcip1hdSLR_j8uPe3Vcgc5eH19NyGDBII
 id: paragraph.foundation_cta_banner.field_foundation_cta
 field_name: field_foundation_cta
 entity_type: paragraph

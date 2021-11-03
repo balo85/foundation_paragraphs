@@ -1,0 +1,10 @@
+uuid: f463a70d-5a91-4b2c-bdb3-54819d068da5
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_drupal_view
+label: 'Drupal View'
+icon_uuid: null
+icon_default: null
+description: 'Embed a Drupal View'
+behavior_plugins: {  }

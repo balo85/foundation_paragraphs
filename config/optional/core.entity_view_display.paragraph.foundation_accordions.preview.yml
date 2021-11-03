@@ -10,6 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_accordions
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: X2SDjOWItPoXv5fHOUndZIfd8F0LnQZFIsOHJ-WRweQ
 id: paragraph.foundation_accordions.preview
 targetEntityType: paragraph
 bundle: foundation_accordions

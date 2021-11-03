@@ -1,0 +1,28 @@
+uuid: fb4e8010-c700-46c5-963c-107a35a0c772
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_drupal_view.field_foundation_classes
+    - field.field.paragraph.foundation_drupal_view.field_foundation_id
+    - field.field.paragraph.foundation_drupal_view.field_foundation_views
+    - paragraphs.paragraphs_type.foundation_drupal_view
+  module:
+    - viewsreference
+id: paragraph.foundation_drupal_view.default
+targetEntityType: paragraph
+bundle: foundation_drupal_view
+mode: default
+content:
+  field_foundation_views:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden:
+  field_foundation_classes: true
+  field_foundation_id: true

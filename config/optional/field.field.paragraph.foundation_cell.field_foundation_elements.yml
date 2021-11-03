@@ -8,12 +8,18 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_accordions_tabs
     - paragraphs.paragraphs_type.foundation_cell
     - paragraphs.paragraphs_type.foundation_cta_banner
+    - paragraphs.paragraphs_type.foundation_drupal_block
+    - paragraphs.paragraphs_type.foundation_drupal_view
     - paragraphs.paragraphs_type.foundation_highlight
     - paragraphs.paragraphs_type.foundation_image
+    - paragraphs.paragraphs_type.foundation_interchange
     - paragraphs.paragraphs_type.foundation_separator
     - paragraphs.paragraphs_type.foundation_text
+    - paragraphs.paragraphs_type.foundation_video
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: DGeWQWL3PNDCLZqZ1OOFTHT0kB4h6siXGyvegXOQ3Pk
 id: paragraph.foundation_cell.field_foundation_elements
 field_name: field_foundation_elements
 entity_type: paragraph
@@ -34,40 +40,56 @@ settings:
       foundation_separator: foundation_separator
       foundation_accordions: foundation_accordions
       foundation_accordions_tabs: foundation_accordions_tabs
+      foundation_interchange: foundation_interchange
       foundation_highlight: foundation_highlight
+      foundation_video: foundation_video
       foundation_cta_banner: foundation_cta_banner
+      foundation_drupal_block: foundation_drupal_block
+      foundation_drupal_view: foundation_drupal_view
     target_bundles_drag_drop:
       foundation_accordion:
-        weight: -14
+        weight: -18
         enabled: false
       foundation_accordion_tab:
-        weight: -13
+        weight: -17
         enabled: false
       foundation_accordions:
         enabled: true
-        weight: -20
+        weight: -28
       foundation_accordions_tabs:
         enabled: true
-        weight: -19
+        weight: -27
       foundation_cell:
-        weight: -16
+        weight: -20
         enabled: false
       foundation_cta_banner:
         enabled: true
-        weight: -17
+        weight: -23
+      foundation_drupal_block:
+        enabled: true
+        weight: -22
+      foundation_drupal_view:
+        enabled: true
+        weight: -21
       foundation_grid:
-        weight: -15
+        weight: -19
         enabled: false
       foundation_highlight:
         enabled: true
-        weight: -18
+        weight: -25
       foundation_image:
         enabled: true
-        weight: -22
+        weight: -30
+      foundation_interchange:
+        enabled: true
+        weight: -26
       foundation_separator:
         enabled: true
-        weight: -21
+        weight: -29
       foundation_text:
         enabled: true
-        weight: -23
+        weight: -31
+      foundation_video:
+        enabled: true
+        weight: -24
 field_type: entity_reference_revisions

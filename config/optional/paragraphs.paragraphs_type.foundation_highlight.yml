@@ -2,6 +2,8 @@ uuid: cba6dba5-a40c-4e56-b49a-a510de4afffd
 langcode: it
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: Re9lb4GBXvlY5xzNw4IaKqUWMib0_9ukMMRw5kTqjeg
 id: foundation_highlight
 label: Highlight
 icon_uuid: null

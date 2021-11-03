@@ -1,0 +1,10 @@
+uuid: d3ff57c2-938f-44a3-a44b-a6ca816cb3fe
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_video
+label: Video
+icon_uuid: null
+icon_default: null
+description: 'Embed a video from outsource'
+behavior_plugins: {  }

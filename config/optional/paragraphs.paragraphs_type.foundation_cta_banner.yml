@@ -2,6 +2,8 @@ uuid: 96a75c7a-dc9c-42e7-bde9-722e989efa9e
 langcode: it
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 6T8t2ZJHT76t_83D_v2oSqKhiVcFK0okF9Zz_I-gl9w
 id: foundation_cta_banner
 label: 'CTA Banner'
 icon_uuid: null

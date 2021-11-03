@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_cell
   module:
     - options
+_core:
+  default_config_hash: VpZagPfxqmXSmBwW-qc2ZTNOuYic3T0wKwESpeqau9s
 id: paragraph.foundation_cell.field_foundation_size_medium
 field_name: field_foundation_size_medium
 entity_type: paragraph

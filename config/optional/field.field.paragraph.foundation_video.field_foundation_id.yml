@@ -1,0 +1,19 @@
+uuid: bd0ec30f-9755-42ac-9ea2-9a4601568a54
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_id
+    - paragraphs.paragraphs_type.foundation_video
+id: paragraph.foundation_video.field_foundation_id
+field_name: field_foundation_id
+entity_type: paragraph
+bundle: foundation_video
+label: 'Custom ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

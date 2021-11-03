@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: ZOUi3C4NoUSxgtA73ZKVCzBOT7DLgtWkFeZ2m0CA5lA
 id: paragraph.field_foundation_tabs_from
 field_name: field_foundation_tabs_from
 entity_type: paragraph

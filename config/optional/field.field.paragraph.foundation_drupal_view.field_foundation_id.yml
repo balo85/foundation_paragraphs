@@ -1,0 +1,19 @@
+uuid: ad8b5518-4359-477a-992d-1455ad1556a6
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_id
+    - paragraphs.paragraphs_type.foundation_drupal_view
+id: paragraph.foundation_drupal_view.field_foundation_id
+field_name: field_foundation_id
+entity_type: paragraph
+bundle: foundation_drupal_view
+label: 'Custom ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

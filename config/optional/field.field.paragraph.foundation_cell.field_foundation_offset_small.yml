@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_cell
   module:
     - options
+_core:
+  default_config_hash: MHKapsh2dmTLRbTnEJT3EpcUnQrn6yKwiMMLkseONcA
 id: paragraph.foundation_cell.field_foundation_offset_small
 field_name: field_foundation_offset_small
 entity_type: paragraph

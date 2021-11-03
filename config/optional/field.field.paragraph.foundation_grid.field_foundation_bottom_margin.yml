@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_grid
   module:
     - options
+_core:
+  default_config_hash: BEkp3_wn1sUASWPq12-XW4pq93ukVqf_8wqfJPQnbEM
 id: paragraph.foundation_grid.field_foundation_bottom_margin
 field_name: field_foundation_bottom_margin
 entity_type: paragraph

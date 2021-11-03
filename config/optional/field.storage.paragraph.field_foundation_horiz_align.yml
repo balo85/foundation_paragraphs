@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: pTX9E443r5_OCjl38S2DZp0qm0jzNnHdE21cI2fWDd8
 id: paragraph.field_foundation_horiz_align
 field_name: field_foundation_horiz_align
 entity_type: paragraph

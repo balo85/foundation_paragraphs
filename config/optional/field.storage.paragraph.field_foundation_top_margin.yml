@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: xLClfwZx9cEMdpWfbvNSrl5FRsF1vqC_KEUsS4cJCGs
 id: paragraph.field_foundation_top_margin
 field_name: field_foundation_top_margin
 entity_type: paragraph
@@ -12,16 +14,16 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: 0
+      value: '0'
       label: None
     -
-      value: 1
+      value: '1'
       label: Small
     -
-      value: 2
+      value: '2'
       label: Medium
     -
-      value: 3
+      value: '3'
       label: Large
   allowed_values_function: ''
 module: options

@@ -77,6 +77,8 @@ third_party_settings:
         description: ''
         required_fields: 1
       label: Alignments
+_core:
+  default_config_hash: Knn-S0m3WIQMRB_UK-u6xyBdEcPu-Y0KvEH5Orrfo0Q
 id: paragraph.foundation_grid.default
 targetEntityType: paragraph
 bundle: foundation_grid

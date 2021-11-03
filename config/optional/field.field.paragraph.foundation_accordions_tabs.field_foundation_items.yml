@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_accordions_tabs
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: RPJVwXPRZv7XhaNWL2aNW6oofJDx0a72tckohb6Vxx0
 id: paragraph.foundation_accordions_tabs.field_foundation_items
 field_name: field_foundation_items
 entity_type: paragraph

@@ -2,6 +2,8 @@ uuid: 79f54804-90e2-441e-ab7c-60abe6c6a5b0
 langcode: it
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: QIP6kl1b38Q70RnYVFqg1CQmJpQcM314C4vYqkiIpSo
 id: foundation_accordion_tab
 label: 'Responsive Accordion Tab'
 icon_uuid: null

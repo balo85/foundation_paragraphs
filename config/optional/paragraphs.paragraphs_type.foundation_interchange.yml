@@ -1,0 +1,10 @@
+uuid: 2c36f764-bd52-494c-ab1c-ceef54ff8e64
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_interchange
+label: Interchange
+icon_uuid: null
+icon_default: null
+description: 'Define a custom interchange element'
+behavior_plugins: {  }

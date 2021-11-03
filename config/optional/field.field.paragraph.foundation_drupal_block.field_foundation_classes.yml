@@ -1,0 +1,19 @@
+uuid: a6a55726-51b9-4110-8951-259a1edf5671
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_classes
+    - paragraphs.paragraphs_type.foundation_drupal_block
+id: paragraph.foundation_drupal_block.field_foundation_classes
+field_name: field_foundation_classes
+entity_type: paragraph
+bundle: foundation_drupal_block
+label: 'Additional classes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

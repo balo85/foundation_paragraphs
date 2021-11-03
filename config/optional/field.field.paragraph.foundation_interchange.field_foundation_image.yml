@@ -1,0 +1,38 @@
+uuid: f33d96df-c4cf-42ec-8d0b-6c873ff35455
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_image
+    - paragraphs.paragraphs_type.foundation_interchange
+  module:
+    - image
+id: paragraph.foundation_interchange.field_foundation_image
+field_name: field_foundation_image
+entity_type: paragraph
+bundle: foundation_interchange
+label: Image
+description: 'Used as base image, from phone to up'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'images/paragraphs/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

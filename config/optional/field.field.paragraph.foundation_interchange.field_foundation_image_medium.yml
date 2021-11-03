@@ -1,0 +1,38 @@
+uuid: 1041576f-625a-4faa-81b2-98ce3ec57918
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_image_medium
+    - paragraphs.paragraphs_type.foundation_interchange
+  module:
+    - image
+id: paragraph.foundation_interchange.field_foundation_image_medium
+field_name: field_foundation_image_medium
+entity_type: paragraph
+bundle: foundation_interchange
+label: 'Image medium'
+description: 'Used if needed, from medium to up'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'images/paragraphs/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_foundation_id
     - paragraphs.paragraphs_type.foundation_grid
+_core:
+  default_config_hash: FVuIRaPefPVndBJEIw13bS8PjY7KwIa2pQU2ydig9xg
 id: paragraph.foundation_grid.field_foundation_id
 field_name: field_foundation_id
 entity_type: paragraph

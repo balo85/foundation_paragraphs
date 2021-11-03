@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_foundation_all_closed
     - paragraphs.paragraphs_type.foundation_accordions_tabs
+_core:
+  default_config_hash: 8Hy5g0uh5F41E-QTgJDvjPDQwM0RUXd_gyetnrWLunU
 id: paragraph.foundation_accordions_tabs.field_foundation_all_closed
 field_name: field_foundation_all_closed
 entity_type: paragraph

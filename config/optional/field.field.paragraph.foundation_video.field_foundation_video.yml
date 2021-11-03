@@ -1,0 +1,25 @@
+uuid: 66bf013e-3a64-4cdb-9879-74567e1dd3e2
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_video
+    - paragraphs.paragraphs_type.foundation_video
+  module:
+    - video_embed_field
+id: paragraph.foundation_video.field_foundation_video
+field_name: field_foundation_video
+entity_type: paragraph
+bundle: foundation_video
+label: Video
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: '0'
+    youtube: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field

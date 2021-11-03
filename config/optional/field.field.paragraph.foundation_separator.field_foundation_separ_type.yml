@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_separator
   module:
     - options
+_core:
+  default_config_hash: 7pqQeJORW98lCxRZv1myU5YgjVGEpUsWqQVrEtaB7Jc
 id: paragraph.foundation_separator.field_foundation_separ_type
 field_name: field_foundation_separ_type
 entity_type: paragraph

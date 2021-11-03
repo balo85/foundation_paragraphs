@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: 2ZKhumVfMNCA4S-dN4NhKfpen3cJDA531uuRUDi2ETI
 id: paragraph.field_foundation_separ_type
 field_name: field_foundation_separ_type
 entity_type: paragraph

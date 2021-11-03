@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_grid
   module:
     - options
+_core:
+  default_config_hash: ZtRJDWKckxOCvE4K4e6jkDcdsTZpP8g1SzIhl6lk_u4
 id: paragraph.foundation_grid.field_foundation_top_padding
 field_name: field_foundation_top_padding
 entity_type: paragraph

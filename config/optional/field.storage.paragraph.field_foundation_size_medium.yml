@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: NF894XLgtiUugK2bnQ7ipplTsp2qr9dmqFM2wA079d8
 id: paragraph.field_foundation_size_medium
 field_name: field_foundation_size_medium
 entity_type: paragraph

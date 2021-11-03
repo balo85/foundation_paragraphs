@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_foundation_classes
     - paragraphs.paragraphs_type.foundation_separator
+_core:
+  default_config_hash: vLG9MAsplixTPxt7BMgyTBMoJ5kOgJuuZafgIlgKdxM
 id: paragraph.foundation_separator.field_foundation_classes
 field_name: field_foundation_classes
 entity_type: paragraph

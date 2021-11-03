@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_grid
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: nwsydlDdl7fUbxbwe_zYHoEefwLRwYBeIs7ZCfnRc38
 id: paragraph.foundation_grid.field_foundation_grid_cells
 field_name: field_foundation_grid_cells
 entity_type: paragraph

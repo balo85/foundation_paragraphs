@@ -2,6 +2,8 @@ uuid: de6e9934-0539-4b0e-a671-040e6c559f97
 langcode: it
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: bCJRpB_fCFwpskDbZE8pjb8gt_qGJDW1jwpYXO65DII
 id: foundation_grid
 label: 'Foundation Grid'
 icon_uuid: null

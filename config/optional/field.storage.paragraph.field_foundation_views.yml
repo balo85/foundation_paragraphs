@@ -1,0 +1,21 @@
+uuid: 4215f1bc-d07a-48e1-b949-c323abd3b884
+langcode: it
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - views
+    - viewsreference
+id: paragraph.field_foundation_views
+field_name: field_foundation_views
+entity_type: paragraph
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

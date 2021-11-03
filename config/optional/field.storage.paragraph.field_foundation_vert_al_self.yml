@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: zRyiZSGBrHGOIjQaZoFBxoq1eY_p8Kg0uNqMrh3JCog
 id: paragraph.field_foundation_vert_al_self
 field_name: field_foundation_vert_al_self
 entity_type: paragraph

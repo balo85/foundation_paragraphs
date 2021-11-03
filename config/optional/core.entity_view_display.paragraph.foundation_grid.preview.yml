@@ -19,6 +19,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_grid
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: 4Rv523GjRQ844kpMvOVDMYO6Mv0ma7v2wHcgSnD17SI
 id: paragraph.foundation_grid.preview
 targetEntityType: paragraph
 bundle: foundation_grid

@@ -1,0 +1,23 @@
+uuid: 412845e0-96f6-454d-9907-6b57d5acb3fe
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_as_background
+    - paragraphs.paragraphs_type.foundation_interchange
+id: paragraph.foundation_interchange.field_foundation_as_background
+field_name: field_foundation_as_background
+entity_type: paragraph
+bundle: foundation_interchange
+label: 'As background'
+description: 'If checked, the paragraph will be printed as background'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

@@ -5,6 +5,8 @@ dependencies:
   module:
     - link
     - paragraphs
+_core:
+  default_config_hash: Xyik02d05z0LH2rJRJgLUfMsEzukWrELCcxBrs-Gd0Y
 id: paragraph.field_foundation_cta
 field_name: field_foundation_cta
 entity_type: paragraph

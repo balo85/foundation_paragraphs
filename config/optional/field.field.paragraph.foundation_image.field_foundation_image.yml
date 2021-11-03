@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_image
   module:
     - image
+_core:
+  default_config_hash: RVY3Uv1s7JRYjOIWCvzWYNV66OjBHBwmHOBcqV5cHOA
 id: paragraph.foundation_image.field_foundation_image
 field_name: field_foundation_image
 entity_type: paragraph

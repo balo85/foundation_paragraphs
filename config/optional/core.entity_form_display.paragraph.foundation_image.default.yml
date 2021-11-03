@@ -7,15 +7,35 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.foundation_image
   module:
+    - field_group
     - image
     - imce
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - status
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+_core:
+  default_config_hash: hjdQ6SHRgLPRg36Mt4jno1yiyoWlAYhRaMpDBonlsc0
 id: paragraph.foundation_image.default
 targetEntityType: paragraph
 bundle: foundation_image
 mode: default
 content:
   field_foundation_image:
-    weight: 1
+    weight: 2
     settings:
       preview_image_style: thumbnail
       progress_indicator: throbber
@@ -26,7 +46,7 @@ content:
     region: content
   status:
     type: boolean_checkbox
-    weight: 0
+    weight: 1
     region: content
     settings:
       display_label: true

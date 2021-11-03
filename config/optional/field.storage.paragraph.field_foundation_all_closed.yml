@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: tYQpLqpn9B0-lYr6ctsUv9rl9bdComAFqI5VtWrYCK8
 id: paragraph.field_foundation_all_closed
 field_name: field_foundation_all_closed
 entity_type: paragraph

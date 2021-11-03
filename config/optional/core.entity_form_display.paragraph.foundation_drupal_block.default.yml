@@ -1,0 +1,70 @@
+uuid: 696116e7-3d59-4de7-92eb-66b2edcb57f8
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_drupal_block.field_foundation_block
+    - field.field.paragraph.foundation_drupal_block.field_foundation_classes
+    - field.field.paragraph.foundation_drupal_block.field_foundation_id
+    - paragraphs.paragraphs_type.foundation_drupal_block
+  module:
+    - block_field
+    - field_group
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - status
+        - field_foundation_id
+        - field_foundation_classes
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+id: paragraph.foundation_drupal_block.default
+targetEntityType: paragraph
+bundle: foundation_drupal_block
+mode: default
+content:
+  field_foundation_block:
+    weight: 3
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_foundation_classes:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_foundation_id:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

@@ -17,6 +17,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_cell
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: GmnA8KUtq7QB7Aevrns0mppB6Xwxfd0rV9bS0Un3ofY
 id: paragraph.foundation_cell.preview
 targetEntityType: paragraph
 bundle: foundation_cell

@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: chjyscN5-ATmbY-Z3TveGn7QylnjNj68IqwBuakOFFQ
 id: paragraph.field_foundation_vert_align
 field_name: field_foundation_vert_align
 entity_type: paragraph

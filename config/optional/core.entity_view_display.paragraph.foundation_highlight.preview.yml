@@ -10,6 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_highlight
   module:
     - text
+_core:
+  default_config_hash: q4qHyIcCbJUF57d4-REqz7mj6jJx5qxzj4my2MDEFC0
 id: paragraph.foundation_highlight.preview
 targetEntityType: paragraph
 bundle: foundation_highlight

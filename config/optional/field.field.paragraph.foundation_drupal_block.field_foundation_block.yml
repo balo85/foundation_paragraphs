@@ -1,0 +1,36 @@
+uuid: b738d193-2546-40cb-beae-a44acdf4a63a
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_block
+    - paragraphs.paragraphs_type.foundation_drupal_block
+  module:
+    - block_field
+id: paragraph.foundation_drupal_block.field_foundation_block
+field_name: field_foundation_block
+entity_type: paragraph
+bundle: foundation_drupal_block
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: categories
+  selection_settings:
+    categories:
+      Blocco: Blocco
+      'Elenchi (Viste)': 'Elenchi (Viste)'
+      Webform: Webform
+      'Chaos Tools': '0'
+      core: '0'
+      Devel: '0'
+      Form: '0'
+      Help: '0'
+      Menù: '0'
+      Sistema: '0'
+      System: '0'
+      User: '0'
+field_type: block_field

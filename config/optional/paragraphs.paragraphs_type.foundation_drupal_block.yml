@@ -1,0 +1,10 @@
+uuid: 9e5eb46a-c033-4f2d-a6ce-a73200e90866
+langcode: it
+status: true
+dependencies: {  }
+id: foundation_drupal_block
+label: 'Drupal Block'
+icon_uuid: null
+icon_default: null
+description: 'Embed a Drupal Block'
+behavior_plugins: {  }

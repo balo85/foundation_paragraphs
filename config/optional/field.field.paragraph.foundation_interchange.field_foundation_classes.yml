@@ -1,0 +1,19 @@
+uuid: 4e55adcf-3e1c-4333-9760-0c5fb61bb70a
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_classes
+    - paragraphs.paragraphs_type.foundation_interchange
+id: paragraph.foundation_interchange.field_foundation_classes
+field_name: field_foundation_classes
+entity_type: paragraph
+bundle: foundation_interchange
+label: 'Additional classes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

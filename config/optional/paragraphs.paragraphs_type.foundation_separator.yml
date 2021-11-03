@@ -2,6 +2,8 @@ uuid: bf8bb9d4-c1de-4d84-9f97-92e807b25fbc
 langcode: it
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: I6wPrDQg_wqhzWNw1CnYjopqG4qJL3XVV3fjOxg1D9A
 id: foundation_separator
 label: Separator
 icon_uuid: null

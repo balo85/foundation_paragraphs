@@ -29,6 +29,8 @@ third_party_settings:
         description: ''
         required_fields: 1
       label: Settings
+_core:
+  default_config_hash: WuBrTUMFZFLmOVp2YNeFSuEYjV-DgJ7jyI4pFvLj9Z0
 id: paragraph.foundation_accordion_tab.default
 targetEntityType: paragraph
 bundle: foundation_accordion_tab

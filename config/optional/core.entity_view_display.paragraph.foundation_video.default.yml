@@ -1,0 +1,30 @@
+uuid: 579d7736-f691-49c9-9c39-3b2509291d42
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_video.field_foundation_classes
+    - field.field.paragraph.foundation_video.field_foundation_id
+    - field.field.paragraph.foundation_video.field_foundation_video
+    - paragraphs.paragraphs_type.foundation_video
+  module:
+    - video_embed_field
+id: paragraph.foundation_video.default
+targetEntityType: paragraph
+bundle: foundation_video
+mode: default
+content:
+  field_foundation_video:
+    weight: 0
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden:
+  field_foundation_classes: true
+  field_foundation_id: true

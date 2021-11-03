@@ -6,14 +6,34 @@ dependencies:
     - field.field.paragraph.foundation_text.field_foundation_text
     - paragraphs.paragraphs_type.foundation_text
   module:
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - status
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+_core:
+  default_config_hash: 6OZ8yiW8akj016Ej08YFtiH6Z18wWKKPs764y3lbzMo
 id: paragraph.foundation_text.default
 targetEntityType: paragraph
 bundle: foundation_text
 mode: default
 content:
   field_foundation_text:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -22,7 +42,7 @@ content:
     region: content
   status:
     type: boolean_checkbox
-    weight: 0
+    weight: 1
     region: content
     settings:
       display_label: true

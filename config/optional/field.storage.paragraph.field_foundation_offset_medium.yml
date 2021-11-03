@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: vb4y7C3XJg524Hit0079xfc09Ze5Il19lYpmA3thKH0
 id: paragraph.field_foundation_offset_medium
 field_name: field_foundation_offset_medium
 entity_type: paragraph

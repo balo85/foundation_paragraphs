@@ -2,6 +2,8 @@ uuid: aef09b75-034a-43be-8db4-e5bbe0c8828c
 langcode: it
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: lXyuoF37xZrMKDpb1iuEaNzfuiwLyhMr2nAY2sn-Cx0
 id: foundation_cell
 label: 'Foundation Cell'
 icon_uuid: null

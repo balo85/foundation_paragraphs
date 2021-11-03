@@ -5,6 +5,8 @@ dependencies:
   module:
     - options
     - paragraphs
+_core:
+  default_config_hash: m_-oEoI85hD48gxugam9bkr1QyqGLWTa9rRQIQd8ho4
 id: paragraph.field_foundation_offset_small
 field_name: field_foundation_offset_small
 entity_type: paragraph

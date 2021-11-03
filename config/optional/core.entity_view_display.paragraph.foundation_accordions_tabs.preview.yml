@@ -12,6 +12,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_accordions_tabs
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: P50xJnH9iMyLkjcDTl73cTVPdEgO1wZ7t1Tb2KidSiM
 id: paragraph.foundation_accordions_tabs.preview
 targetEntityType: paragraph
 bundle: foundation_accordions_tabs

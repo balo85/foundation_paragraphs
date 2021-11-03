@@ -14,6 +14,8 @@ dependencies:
     - image
     - link
     - text
+_core:
+  default_config_hash: rRxXXbkChu6z10ZDK-Y5WN8IyEG7FmuYQ0BTyPGTkWY
 id: paragraph.foundation_cta_banner.default
 targetEntityType: paragraph
 bundle: foundation_cta_banner

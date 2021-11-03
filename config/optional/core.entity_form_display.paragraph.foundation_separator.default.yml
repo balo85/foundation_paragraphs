@@ -29,6 +29,8 @@ third_party_settings:
         description: ''
         required_fields: 1
       label: Settings
+_core:
+  default_config_hash: GlUzxq0fwHo48bGDA6sJPS9wPxYHVEw_ONRu_kWfLo8
 id: paragraph.foundation_separator.default
 targetEntityType: paragraph
 bundle: foundation_separator

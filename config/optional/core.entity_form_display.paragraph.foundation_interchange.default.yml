@@ -1,0 +1,104 @@
+uuid: 2ede1619-d89f-454c-9b92-cbf9704dd72a
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_interchange.field_foundation_as_background
+    - field.field.paragraph.foundation_interchange.field_foundation_classes
+    - field.field.paragraph.foundation_interchange.field_foundation_id
+    - field.field.paragraph.foundation_interchange.field_foundation_image
+    - field.field.paragraph.foundation_interchange.field_foundation_image_large
+    - field.field.paragraph.foundation_interchange.field_foundation_image_medium
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.foundation_interchange
+  module:
+    - field_group
+    - image
+    - imce
+third_party_settings:
+  field_group:
+    group_foundation_settings:
+      children:
+        - status
+        - field_foundation_id
+        - field_foundation_classes
+        - field_foundation_as_background
+      parent_name: ''
+      weight: 0
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Settings
+        description: ''
+        required_fields: 1
+      label: Settings
+id: paragraph.foundation_interchange.default
+targetEntityType: paragraph
+bundle: foundation_interchange
+mode: default
+content:
+  field_foundation_as_background:
+    weight: 13
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_classes:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_foundation_id:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_foundation_image:
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_foundation_image_large:
+    weight: 3
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  field_foundation_image_medium:
+    weight: 2
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

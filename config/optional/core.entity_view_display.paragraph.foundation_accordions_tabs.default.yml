@@ -12,6 +12,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: PMbwBt_LWBbspgPUYa1Flb-0s8eIcnrC42t39PWriPo
 id: paragraph.foundation_accordions_tabs.default
 targetEntityType: paragraph
 bundle: foundation_accordions_tabs

@@ -1,0 +1,19 @@
+uuid: 7e0b57fb-017a-400f-9a4e-1d54e85ffd3a
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_id
+    - paragraphs.paragraphs_type.foundation_interchange
+id: paragraph.foundation_interchange.field_foundation_id
+field_name: field_foundation_id
+entity_type: paragraph
+bundle: foundation_interchange
+label: 'Custom ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

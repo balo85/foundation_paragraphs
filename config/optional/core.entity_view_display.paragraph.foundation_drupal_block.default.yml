@@ -1,0 +1,26 @@
+uuid: a51779d1-cd5e-4bad-9e21-b4af03c34d87
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.foundation_drupal_block.field_foundation_block
+    - field.field.paragraph.foundation_drupal_block.field_foundation_classes
+    - field.field.paragraph.foundation_drupal_block.field_foundation_id
+    - paragraphs.paragraphs_type.foundation_drupal_block
+  module:
+    - block_field
+id: paragraph.foundation_drupal_block.default
+targetEntityType: paragraph
+bundle: foundation_drupal_block
+mode: default
+content:
+  field_foundation_block:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden:
+  field_foundation_classes: true
+  field_foundation_id: true
