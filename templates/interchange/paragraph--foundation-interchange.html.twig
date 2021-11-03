@@ -1,0 +1,42 @@
+{##
+ # Twig for the Foundation interchange paragraphs
+ # Based on the Zurb Foundation Interchange (https://get.foundation/sites/docs/interchange.html)
+ #}
+{%
+  set classes = [
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  'paragraphId-' ~ paragraph.id(),
+]
+%}
+
+{# Get the small image (mandatory) #}
+{% set sImage = '[' ~ (content.field_foundation_image|field_value)[0]['#markup'] ~ ', small]' %}
+
+{# Get the medium image (optional) #}
+{% set mImage = '' %}
+{% if content.field_foundation_image_medium[0] is defined %}
+  {% set mImage = ', [' ~ content.field_foundation_image_medium[0]['#markup'] ~ ', medium]' %}
+{% endif %}
+
+{# Get the large image (optional) #}
+{% set lImage = '' %}
+{% if content.field_foundation_image_large[0] is defined %}
+  {% set lImage = ', [' ~ content.field_foundation_image_large[0]['#markup'] ~ ', large]' %}
+{% endif %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      {% if content.field_foundation_as_background[0]['#markup'] == 1 %}
+        <div class="foundationInterchangeBg" data-interchange="{{ sImage }}{{ mImage }}{{ lImage }}"></div>
+      {% else %}
+        <img data-interchange="{{ sImage }}{{ mImage }}{{ lImage }}" />
+      {% endif %}
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+
