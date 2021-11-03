@@ -15,6 +15,8 @@
         "drupal/paragraphs_ee": "^1.8",
         "drupal/field_group": "^3.2",
         "drupal/twig_field_value": "^2.0",
-        "drupal/twig_tweak": "^3.1"
+        "drupal/viewsreference": "^1.7",
+        "drupal/block_field": "^1.0@RC",
+        "drupal/video_embed_field": "^2.4"
     }
 }
