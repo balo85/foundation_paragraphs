@@ -1,0 +1,38 @@
+
+/**
+ * Foundation Grid paragraphs + Foundation Cell
+ * Basic class to manage the background
+ * Please note that for sending the background image on fullwidth of the screen you need to modify your page.html.twig.
+ * Please remove all the grid-system and leave the manage on the paragraph Foundation Grid system.
+ */
+.paragraph--type--foundation-grid { position: relative; }
+.paragraph--type--foundation-cell { position: relative; }
+.grid-container { position: relative; }
+.backgroundDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  & + div {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.expendedBg {}
+  &.internalBg {}
+
+  &.colorBg {}
+  &.colorBg-none {}
+  &.colorBg-light {}
+  &.colorBg-dark {}
+
+  &.imageBg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+  }
+}

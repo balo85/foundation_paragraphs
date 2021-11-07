@@ -1,0 +1,56 @@
+/**
+ * Generation of ad hoc classes for top and bottom spacing
+ * Classes get standard names likes tt-mt-0, tt-pb-1, ..., where
+ * - tt, base prefix
+ * - p/m, Padding or Margin
+ * - t/b: Top or Bottom
+ * - 0, 1, 2, 3, custom space type
+ * This classes ar used in foundation_paragraphs module
+ */
+
+/**
+ * Space map
+ * Used in the generation fuction to create the spaces for the different Foundation Breakpoint (https://get.foundation/sites/docs/media-queries.html)
+ */
+$spaces: (
+  padding: (
+    small: (0: 0px, 1: 10px, 2: 20px, 3: 30px),
+    medium: (0: 0px, 1: 15px, 2: 30px, 3: 45px),
+    large: (0: 0px, 1: 20px, 2: 60px, 3: 120px),
+  ),
+  margin: (
+    small: (0: 0px, 1: 10px, 2: 20px, 3: 30px),
+    medium: (0: 0px, 1: 15px, 2: 30px, 3: 45px),
+    large: (0: 0px, 1: 20px, 2: 60px, 3: 120px),
+  )
+);
+
+/**
+ * Feneration fuction
+ * $type: padding / margin
+ * $breakpoints: array of breakpoint (plase use the same names of Zurb Foundation Media Queries)
+ * $bp: <small, medium, large>, single breakpoint
+ * $size: <0, 1, 2, 3>, for the class name
+ * $value: pixel value to assign
+ */
+@each $type, $breakpoints in $spaces {
+  $printType: 'p';
+  @if $type == margin {
+    $printType: 'm';
+  }
+
+  @each $bp, $values in $breakpoints {
+    @each $size, $value in $values {
+
+      // Manage single breakepoint
+      @include breakpoint($bp) {
+        .tt-#{$printType}t-#{$size} {
+          #{$type}-top: $value;
+        }
+        .tt-#{$printType}b-#{$size} {
+          #{$type}-bottom: $value;
+        }
+      }
+    }
+  }
+}
