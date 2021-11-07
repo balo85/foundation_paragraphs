@@ -11,13 +11,38 @@
   'paragraphId-' ~ paragraph.id()
 ]
 %}
+
+{# Get the fields to define the background #}
+{% set bgAttributes = create_attribute() %}
+{% set bgColor = (content.field_foundation_bg_color[0] is defined) ? content.field_foundation_bg_color[0]['#markup'] : '' %}
+{% set bgImage = (content.field_foundation_bg_image[0] is defined) ? content.field_foundation_bg_image[0]['#markup'] : '' %}
+{% set bgExp = (content.field_foundation_bg_expanded[0] is defined) ? content.field_foundation_bg_expanded[0]['#markup']|number_format : 0 %}
+
+{# Define the classes for the background #}
+{% set bgClasses = [
+  'backgroundDiv',
+  (bgExp == 1) ? 'expendedBg' : 'internalBg',
+  (bgColor != '') ? 'colorBg' : '',
+  (bgColor != '') ? 'colorBg-' ~ bgColor : '',
+  (bgImage != '') ? 'imageBg' : '',
+] %}
+
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
+      {% if ((bgColor != '') or (bgImage != '')) and (bgExp == 1) %}
+        <div{{ bgAttributes.addClass(bgClasses) }} style="background-image: url('{{ bgImage }}');"></div>
+      {% endif %}
+
       {# If needed, I open the Grid Container wrapper #}
       {% if containerType != 'none' %}
         <div class="grid-container {{ containerType }}">
+
+        {% if ((bgColor != '') or (bgImage != '')) and (bgExp == 0) %}
+          <div{{ bgAttributes.addClass(bgClasses) }} style="background-image: url('{{ bgImage }}');"></div>
+        {% endif %}
+
       {% endif %}
 
       <div class="grid-x {{ gutterType }} {{ gutterCollapse}} {{ vertAlign }} {{ horizAlign }}">
