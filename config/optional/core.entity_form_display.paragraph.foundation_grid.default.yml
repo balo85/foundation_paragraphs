@@ -3,6 +3,9 @@ langcode: it
 status: true
 dependencies:
   config:
+    - field.field.paragraph.foundation_grid.field_foundation_bg_color
+    - field.field.paragraph.foundation_grid.field_foundation_bg_expanded
+    - field.field.paragraph.foundation_grid.field_foundation_bg_image
     - field.field.paragraph.foundation_grid.field_foundation_bottom_margin
     - field.field.paragraph.foundation_grid.field_foundation_bottom_padding
     - field.field.paragraph.foundation_grid.field_foundation_classes
@@ -15,9 +18,12 @@ dependencies:
     - field.field.paragraph.foundation_grid.field_foundation_top_margin
     - field.field.paragraph.foundation_grid.field_foundation_top_padding
     - field.field.paragraph.foundation_grid.field_foundation_vert_align
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.foundation_grid
   module:
     - field_group
+    - image
+    - imce
     - paragraphs
     - paragraphs_ee
     - paragraphs_features
@@ -77,6 +83,23 @@ third_party_settings:
         description: ''
         required_fields: 1
       label: Alignments
+    group_foundation_backgrounds:
+      children:
+        - field_foundation_bg_color
+        - field_foundation_bg_image
+        - field_foundation_bg_expanded
+      parent_name: ''
+      weight: 3
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Backgrounds
+        description: ''
+        required_fields: 1
+      label: Backgrounds
 _core:
   default_config_hash: Knn-S0m3WIQMRB_UK-u6xyBdEcPu-Y0KvEH5Orrfo0Q
 id: paragraph.foundation_grid.default
@@ -84,6 +107,29 @@ targetEntityType: paragraph
 bundle: foundation_grid
 mode: default
 content:
+  field_foundation_bg_color:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_foundation_bg_expanded:
+    weight: 9
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_bg_image:
+    weight: 8
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
   field_foundation_bottom_margin:
     weight: 16
     settings: {  }
@@ -112,7 +158,7 @@ content:
     region: content
   field_foundation_grid_cells:
     type: paragraphs
-    weight: 3
+    weight: 4
     settings:
       title: Cell
       title_plural: Cells

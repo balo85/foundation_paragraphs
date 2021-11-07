@@ -1,0 +1,23 @@
+uuid: 27bfb968-9c5d-4661-acc8-479352f4f69a
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_bg_exp_right
+    - paragraphs.paragraphs_type.foundation_cell
+id: paragraph.foundation_cell.field_foundation_bg_exp_right
+field_name: field_foundation_bg_exp_right
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Expand background on right'
+description: 'If checked, the background will be expande to the right side of the page. Otherwise will be printed in the cell.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

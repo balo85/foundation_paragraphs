@@ -1,0 +1,23 @@
+uuid: 4f519fff-5764-438e-8528-c2a70a733afd
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_bg_expanded
+    - paragraphs.paragraphs_type.foundation_grid
+id: paragraph.foundation_grid.field_foundation_bg_expanded
+field_name: field_foundation_bg_expanded
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Expand background'
+description: 'If checked, the background will be printed on full width. Otherwise will be printed in the grid system.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

@@ -1,0 +1,30 @@
+uuid: 2925f8eb-548d-4261-bd74-f4b79b9f4345
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_bg_color
+field_name: field_foundation_bg_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: 'No background color'
+    -
+      value: light
+      label: 'Light background'
+    -
+      value: dark
+      label: 'Dark background'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -3,6 +3,10 @@ langcode: it
 status: true
 dependencies:
   config:
+    - field.field.paragraph.foundation_cell.field_foundation_bg_color
+    - field.field.paragraph.foundation_cell.field_foundation_bg_exp_left
+    - field.field.paragraph.foundation_cell.field_foundation_bg_exp_right
+    - field.field.paragraph.foundation_cell.field_foundation_bg_image
     - field.field.paragraph.foundation_cell.field_foundation_classes
     - field.field.paragraph.foundation_cell.field_foundation_elements
     - field.field.paragraph.foundation_cell.field_foundation_id
@@ -13,9 +17,12 @@ dependencies:
     - field.field.paragraph.foundation_cell.field_foundation_size_medium
     - field.field.paragraph.foundation_cell.field_foundation_size_small
     - field.field.paragraph.foundation_cell.field_foundation_vert_al_self
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.foundation_cell
   module:
     - field_group
+    - image
+    - imce
     - paragraphs
     - paragraphs_ee
     - paragraphs_features
@@ -59,6 +66,24 @@ third_party_settings:
         classes: ''
         show_empty_fields: 0
       label: Sizing
+    group_foundation_backgrounds:
+      children:
+        - field_foundation_bg_color
+        - field_foundation_bg_image
+        - field_foundation_bg_exp_left
+        - field_foundation_bg_exp_right
+      parent_name: ''
+      weight: 2
+      format_type: popup_fake
+      region: content
+      format_settings:
+        show_empty_fields: 0
+        id: ''
+        classes: ''
+        link_text: Backgrounds
+        description: ''
+        required_fields: 1
+      label: Backgrounds
 _core:
   default_config_hash: OI471EgECMoIiXIndca1_z0dgNy32uMhxhwK1W2ypUU
 id: paragraph.foundation_cell.default
@@ -66,6 +91,36 @@ targetEntityType: paragraph
 bundle: foundation_cell
 mode: default
 content:
+  field_foundation_bg_color:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_foundation_bg_exp_left:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_bg_exp_right:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_foundation_bg_image:
+    weight: 5
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
   field_foundation_classes:
     weight: 6
     settings:
@@ -76,7 +131,7 @@ content:
     region: content
   field_foundation_elements:
     type: paragraphs
-    weight: 2
+    weight: 3
     settings:
       title: Element
       title_plural: Elements

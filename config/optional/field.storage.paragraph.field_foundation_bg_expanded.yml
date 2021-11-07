@@ -1,0 +1,18 @@
+uuid: a465b86c-6e98-4184-a711-a6b43a51c73f
+langcode: it
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_foundation_bg_expanded
+field_name: field_foundation_bg_expanded
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

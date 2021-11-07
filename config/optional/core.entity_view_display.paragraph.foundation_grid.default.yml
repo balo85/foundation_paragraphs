@@ -3,6 +3,9 @@ langcode: it
 status: true
 dependencies:
   config:
+    - field.field.paragraph.foundation_grid.field_foundation_bg_color
+    - field.field.paragraph.foundation_grid.field_foundation_bg_expanded
+    - field.field.paragraph.foundation_grid.field_foundation_bg_image
     - field.field.paragraph.foundation_grid.field_foundation_bottom_margin
     - field.field.paragraph.foundation_grid.field_foundation_bottom_padding
     - field.field.paragraph.foundation_grid.field_foundation_classes
@@ -18,6 +21,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_grid
   module:
     - entity_reference_revisions
+    - image
+    - options
 _core:
   default_config_hash: _1iOYdf44lImmrgn6Uffw5h-MAHiGzXUGBsjyltO-Ms
 id: paragraph.foundation_grid.default
@@ -25,6 +30,31 @@ targetEntityType: paragraph
 bundle: foundation_grid
 mode: default
 content:
+  field_foundation_bg_color:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_foundation_bg_expanded:
+    weight: 2
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_foundation_bg_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
   field_foundation_grid_cells:
     type: entity_reference_revisions_entity_view
     weight: 0

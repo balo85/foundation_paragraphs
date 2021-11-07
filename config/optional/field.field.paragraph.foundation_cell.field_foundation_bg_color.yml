@@ -1,0 +1,21 @@
+uuid: e81db2f0-035c-44d4-b6ca-89da57c407bd
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_bg_color
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_bg_color
+field_name: field_foundation_bg_color
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Background color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,38 @@
+uuid: bd6a4bcc-0adc-476e-b354-3bbffad55532
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_bg_image
+    - paragraphs.paragraphs_type.foundation_grid
+  module:
+    - image
+id: paragraph.foundation_grid.field_foundation_bg_image
+field_name: field_foundation_bg_image
+entity_type: paragraph
+bundle: foundation_grid
+label: 'Background image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'images/paragraphs/backgrounds/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

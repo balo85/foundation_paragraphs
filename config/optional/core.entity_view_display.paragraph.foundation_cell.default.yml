@@ -3,6 +3,10 @@ langcode: it
 status: true
 dependencies:
   config:
+    - field.field.paragraph.foundation_cell.field_foundation_bg_color
+    - field.field.paragraph.foundation_cell.field_foundation_bg_exp_left
+    - field.field.paragraph.foundation_cell.field_foundation_bg_exp_right
+    - field.field.paragraph.foundation_cell.field_foundation_bg_image
     - field.field.paragraph.foundation_cell.field_foundation_classes
     - field.field.paragraph.foundation_cell.field_foundation_elements
     - field.field.paragraph.foundation_cell.field_foundation_id
@@ -16,6 +20,8 @@ dependencies:
     - paragraphs.paragraphs_type.foundation_cell
   module:
     - entity_reference_revisions
+    - image
+    - options
 _core:
   default_config_hash: QSTSbGA1Xri0QCu7DVxkrDbLaps7rUtH6EQ2xuOnrhE
 id: paragraph.foundation_cell.default
@@ -23,6 +29,41 @@ targetEntityType: paragraph
 bundle: foundation_cell
 mode: default
 content:
+  field_foundation_bg_color:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_foundation_bg_exp_left:
+    weight: 3
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_foundation_bg_exp_right:
+    weight: 4
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_foundation_bg_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
   field_foundation_elements:
     type: entity_reference_revisions_entity_view
     weight: 0

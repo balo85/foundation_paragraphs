@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.foundation_cell.field_foundation_bg_color
+    - field.field.paragraph.foundation_cell.field_foundation_bg_exp_left
+    - field.field.paragraph.foundation_cell.field_foundation_bg_exp_right
+    - field.field.paragraph.foundation_cell.field_foundation_bg_image
     - field.field.paragraph.foundation_cell.field_foundation_classes
     - field.field.paragraph.foundation_cell.field_foundation_elements
     - field.field.paragraph.foundation_cell.field_foundation_id
@@ -34,6 +38,10 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_foundation_bg_color: true
+  field_foundation_bg_exp_left: true
+  field_foundation_bg_exp_right: true
+  field_foundation_bg_image: true
   field_foundation_classes: true
   field_foundation_id: true
   field_foundation_offset_large: true
