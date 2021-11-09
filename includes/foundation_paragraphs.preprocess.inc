@@ -56,22 +56,22 @@ function _bp_preprocessParagraph_commonInfos(&$variables, $paragraph) {
 function _bp_preprocessParagraph_topBottomSpaces(&$variables, $paragraph) {
   if($paragraph->hasField('field_foundation_top_margin')) {
     $strSpace = (!$paragraph->field_foundation_top_margin->isEmpty()) ? trim((string)$paragraph->field_foundation_top_margin->getString()) : '0';
-    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'item-margin-top-'.$strSpace; }
+    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'tt-mt-'.$strSpace; }
   }
 
   if($paragraph->hasField('field_foundation_bottom_margin')) {
     $strSpace = (!$paragraph->field_foundation_bottom_margin->isEmpty()) ? trim((string)$paragraph->field_foundation_bottom_margin->getString()) : '0';
-    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'item-margin-bottom-'.$strSpace; }
+    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'tt-mb-'.$strSpace; }
   }
 
   if($paragraph->hasField('field_foundation_top_padding')) {
     $strSpace = (!$paragraph->field_foundation_top_padding->isEmpty()) ? trim((string)$paragraph->field_foundation_top_padding->getString()) : '0';
-    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'item-padding-top-'.$strSpace; }
+    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'tt-pt-'.$strSpace; }
   }
 
   if($paragraph->hasField('field_foundation_bottom_padding')) {
     $strSpace = (!$paragraph->field_foundation_bottom_padding->isEmpty()) ? trim((string)$paragraph->field_foundation_bottom_padding->getString()) : '0';
-    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'item-padding-bottom-'.$strSpace; }
+    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'tt-pb-'.$strSpace; }
   }
 }
 
