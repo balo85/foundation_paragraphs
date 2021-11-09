@@ -11,10 +11,10 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-The *Foundation 6 Utils Paragraphs* define a custom set of Paragraphs used as base for content management.
-We love Zurb Foundation framework (URL https://get.foundation/), and we use it in quite all of our website.
-For that, I've added all the standard Paragraphs that we use in all of our website in this module, so the basic development is faster.
-Please always check the doc of Zurb Foundation for any informations.
+The *Foundation 6 Utils Paragraphs* defines a custom set of Paragraphs used as the basis for content management.
+We love the [Zurb Foundation framework](https://get.foundation/), as we use it in almost all of our websites.
+To make basic development faster, I've added all the standard paragraphs we use on our websites to this module.
+Always check the Zurb Foundation document for any information.
 
 
 REQUIREMENTS
@@ -45,8 +45,7 @@ Install the Foundation 6 Utils Paragraphs module as you would normally install a
 
 CONFIGURATION
 -------------
-
-This module need no configuration. Still, you will fin the in *utils* folder two scss files.
+This module needs no configuration. However, you will find two scss files in the *utils* folder.
 
 **spacers.scss** help to manage the top and bottom spaces that are used in the grid system. Please check the file to learn how to use it.
 
@@ -60,19 +59,19 @@ FAQ
 
 **Q: How does *Foundation Grid* paragraph work?**
 
-A: Foundation Grid is the main paragraph of the set, and is the one you need to manage on your content type. This paragraph make you easy to manage
+A: Foundation Grid is the main paragraph of the set, and it is the one you need to manage on your content type. This paragraph makes it easy for you to manage
 * Custom ID and custom classes of the grid.
 * Both top and bottom spacing, both padding and margin. We define a basic set of spaces (0, 1, 2, 3), but feel free to add more when you need. Use spacers.scss as help to manage them.
 * Grid Container type, based on [Zurb Foundation XY Grid](https://get.foundation/sites/docs/xy-grid.html).
 * Cell Gutters and Collapse gutters, based on [Zurb Foundation XY Grid](https://get.foundation/sites/docs/xy-grid.html).
-* Horizontal alignment and Vertical alignment of the cells, based on [Zurb Foundation Flexbox Utilities](https://get.foundation/sites/docs/flexbox-utilities.html).
+* Horizontal and vertical cell alignment, based on [Zurb Foundation Flexbox Utilities](https://get.foundation/sites/docs/flexbox-utilities.html).
 * Background, both as image and color. You have an additional checkbox to manage the background as full witdh. Please check theme-minimal-styles.scss for a basic idea to how to manage it.
 * Cells, to manage each content inside the grid.
 
 
 **Q: How does *Foundation Cell* paragraph work?**
 
-A: Foundation Cell is another main paragraph of the set, and make you define a custom cell in your grid system. This paragraph make you easy to manage
+A: Foundation Cell is another main paragraph of the set, and makes you define a custom cell in your grid system. This paragraph makes it easy for you to manage
 * Custom ID and custom classes of the cell.
 * For each standard breakpoint (small, medium and large), the opportunity to define the size and the offset, based on [Zurb Foundation XY Grid](https://get.foundation/sites/docs/xy-grid.html).
 * Vertical alignment of the cell, based on [Zurb Foundation Flexbox Utilities](https://get.foundation/sites/docs/flexbox-utilities.html).
@@ -99,31 +98,31 @@ The predefined path for the uploads is *images/paragraphs/[date:custom:Y]-[date:
 
 **Q: How does *Accordions* and *Responsive Accordions Tabs* paragraphs works?**
 
-A: This two paragraphs make you easy to manage this two Zurb Foundation elements, both [Accordion](https://get.foundation/sites/docs/accordion.html) and [Responsive Accordion Tabs](https://get.foundation/sites/docs/responsive-accordion-tabs.html).
-Please, read the official doc to understand the definition of the settings.
+A: These two paragraphs make it easy for you to manage these two elements of Zurb Foundation, both [Accordion](https://get.foundation/sites/docs/accordion.html) and [Responsive Accordion Tabs](https://get.foundation/sites/docs/responsive-accordion-tabs.html).
+Please read the official document for the definition of the settings.
 
 
 **Q: How does *Highlight* paragraph works?**
 
-A: The paragraph give you the opportunity to add a single WYSIWYG text editor in the cell, plus the opportunity to manage Custom ID and custom classes.
-We find that we need quite always to manage some Highlight content with different style from Text, so we keep this content as standard.
+A: The paragraph allows you to add a single WYSIWYG text editor in the cell, plus the ability to handle custom IDs and custom classes.
+We find that there is a need to manage Highlight content with a different style from Text, so we are keeping this content as standard.
 
 
 **Q: How does *CTA Banner* paragraph works?**
 
-A: The paragraph give you the opportunity to add a block with the following field
+A: The paragraph gives you the opportunity to add a block with the following field
 * Custom ID and custom classes
 * CTA link
 * Title
 * Text element as WYSIWYG editor
 * Background image
-  We find that we need quite always to manage some CTA Banner, so we keep this content as standard.
+There are always a few CTA banners to deal with, so we keep this content as standard.
 
-
+\
 **Q: How does *Separator* paragraph works?**
 
 A: Sometimes you need to add an empty space, or a stylized space, between different paragraphs.
-This paragraph give you the opportunity to manage it. You can define
+This paragraph gives you the opportunity to manage it. You can define
 * Custom ID and custom classes
 * Top and bottom margin. We define a basic set of spaces (0, 1, 2, 3), but feel free to add more when you need. Use spacers.scss as help to manage them.
 * Separator type
@@ -131,7 +130,7 @@ This paragraph give you the opportunity to manage it. You can define
 **Q: How does *Drupal Block*, *Drupal View* and *Video* paragraphs works?**
 
 A: This 3 paragraphs give you the opportunity to manage this standard items.
-Please check the related modules for more informations
+Please check the related modules for more information
 * [Block field](https://www.drupal.org/project/block_field)
 * [Views Reference Field](https://www.drupal.org/project/viewsreference)
 * [Video Embed Field](https://www.drupal.org/project/video_embed_field)
