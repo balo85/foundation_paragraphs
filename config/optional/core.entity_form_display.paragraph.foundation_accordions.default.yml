@@ -56,7 +56,7 @@ content:
       closed_mode_threshold: 0
       add_mode: modal
       form_display_mode: default
-      default_paragraph_type: foundation_accordion
+      default_paragraph_type: _none
       features:
         add_above: add_above
         collapse_edit_all: collapse_edit_all
@@ -64,9 +64,9 @@ content:
     third_party_settings:
       paragraphs_features:
         delete_confirmation: true
+        add_in_between: true
         split_text: true
         show_drag_and_drop: true
-        add_in_between: false
       paragraphs_ee:
         paragraphs_ee:
           dialog_style: tiles

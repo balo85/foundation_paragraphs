@@ -1,6 +1,6 @@
 @import "variables";
 
-// Regole generiche applicate ai paragraph di tipo grid per ridurre gli spazi
+// Generic styles to grid paragraph for space reduce
 .field--widget-paragraphs .draggable.paragraph-type--foundation-grid {
   tr.drag-previous { background: transparent; }
 
@@ -24,9 +24,9 @@
 }
 
 
-// Stili ad hoc generici
+// Generic styles
 tr.paragraph-type--foundation-grid {
-  // Stile titolo
+  // Title
   .form-wrapper.paragraph-top.add-above-on {
     .paragraph-type, .paragraph-type-label {
       font-size: 14px;
@@ -47,114 +47,153 @@ tr.paragraph-type--foundation-grid {
     }
   }
 
-  // Riga contenente i bottoni
+  // Row for buttons to add more paragraphs
   tr.paragraphs_ee__add-in-between__row {
-    position: relative !important;
-    height: 30px !important;
+    height: 30px;
     background: transparent !important;
+    line-height: 1;
 
     > td {
-      position: relative !important;
-      height: 30px !important;
-      background: transparent !important;
+      height: 30px;
+      padding-bottom: 5px !important;
+      text-align: left;
 
       .paragraphs-features__add-in-between__wrapper {
-        top: 50%;
-        transform: translate(0, -70%);
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0,0);
+        opacity: 1 !important;
+      }
+
+      .paragraphs_ee__add-in-between__button {
+        margin-right: 2px;
       }
     }
+  }
+
+  // Buttons to manage the settings of the current paragraph
+  .fakeButtonsWrp .button, .paragraphs-actions .button {
+    background: transparent;
+    border: 1px solid $black;
+    color: $black;
+  }
+}
+.js tr.paragraph-type--foundation-grid {
+  .paragraphs_ee__add-in-between__wrapper .paragraphs_ee__add-in-between__button {
+    padding: 0 10px;
+    border: none !important;
+    border-radius: 0 !important;
+
+    font-size: 10px;
+    line-height: 30px;
+    color: $white;
+    text-transform: uppercase;
+
+    &:before, &:after { display: none !important; }
   }
 }
 
 
-// Colori ad hoc per le grid
+// Color for grid
 tr.paragraph-type--foundation-grid {
-  // Background e spaziatura
   background: $bluLight !important;
   border-bottom: 20px solid $white;
 
-  //td { background: $bluLight !important; }
-
-  /*td:first-child:not([style*="display: none;"]),
-  th:first-child:not([style*="display: none;"]) {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-  td:last-child:not([style*="display: none;"]),
-  th:last-child:not([style*="display: none;"]) {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }*/
-
-  // Colore titolo
+  // Title
   .form-wrapper.paragraph-top.add-above-on {
-    .paragraph-type, .paragraph-type-label, .paragraphs-badge { color: $blu; }
+    .paragraph-type, .paragraph-type-label, .paragraphs-badge { color: $bluStandard; }
   }
 
-  // Colore popup dei settings
+  // Fake popup settings
   .form-wrapper.field-group-popup-fake {
     background: $bluLight;
-    border-color: $blu;
+    border-color: $bluStandard;
 
     > legend {
-      background: $blu;
+      background: $bluStandard;
       color: $white;
     }
 
     .lblCloser {
       background: $bluLight;
-      color: $blu;
+      color: $bluStandard;
     }
+  }
+
+  // Buttons to manage the settings of the current paragraph
+  .fakeButtonsWrp .button, .paragraphs-actions .button {
+    border: 1px solid $bluStandard;
+    color: $bluStandard;
+    &:hover {
+      background: $bluStandard;
+      color: $white;
+    }
+  }
+}
+.js tr.paragraph-type--foundation-grid {
+  .paragraphs_ee__add-in-between__wrapper .paragraphs_ee__add-in-between__button {
+    background: $bluDark;
   }
 }
 
 
-// Colori ad hoc per le cell
+// Color for cell
 tr.paragraph-type--foundation-cell {
-  // Background e spaziatura
-  background: $redLight !important;
-  // border-top: 2px dashed $red;
-  // border-right: 2px dashed $red;
-  // border-left: 2px dashed $red;
+  background: $bluMedium !important;
   border-bottom: 20px solid $bluLight;
 
-  // Colore titolo
+  // Title
   .form-wrapper.paragraph-top.add-above-on {
-    .paragraph-type, .paragraph-type-label, .paragraphs-badge { color: $red; }
+    .paragraph-type, .paragraph-type-label, .paragraphs-badge { color: $bluDark; }
   }
 
-  // Stile popup dei settings
+  // Fake popup settings
   .form-wrapper.field-group-popup-fake {
-    background: $redLight;
-    border-color: $red;
+    background: $bluMedium;
+    border-color: $bluDark;
 
     > legend {
-      background: $red;
+      background: $bluDark;
       color: $white;
     }
 
     .lblCloser {
-      background: $redLight;
-      color: $red;
+      background: $bluMedium;
+      color: $bluDark;
     }
+  }
+
+  // Buttons to manage the settings of the current paragraph
+  .fakeButtonsWrp .button, .paragraphs-actions .button {
+    border: 1px solid $bluDark;
+    color: $bluDark;
+    &:hover {
+      background: $bluDark;
+      color: $white;
+    }
+  }
+}
+.js tr.paragraph-type--foundation-cell {
+  .paragraphs_ee__add-in-between__wrapper .paragraphs_ee__add-in-between__button {
+    background: $green;
   }
 }
 
 
-// Colori ad hoc per gli elementi interni
+// Color for items in cell
 tr.paragraph-type--foundation-cell {
   .field-multiple-table {
     tr.draggable:not(.paragraphs-features__add-in-between__row):not(.paragraphs-features__add-in-between__row) {
-      // Background e spaziatura
       background: $white !important;
-      border-bottom: 20px solid $redLight;
+      border-bottom: 20px solid $bluMedium;
 
-      // Colore titolo
+      // Title
       .form-wrapper.paragraph-top.add-above-on {
         .paragraph-type, .paragraph-type-label, .paragraphs-badge { color: $green; }
       }
 
-      // Stile popup dei settings
+      // Fake popup settings
       .form-wrapper.field-group-popup-fake {
         background: $white;
         border-color: $green;
@@ -169,6 +208,39 @@ tr.paragraph-type--foundation-cell {
           color: $green;
         }
       }
+
+      // Buttons to manage the settings of the current paragraph
+      .fakeButtonsWrp .button, .paragraphs-actions .button {
+        border: 1px solid $green;
+        color: $green;
+        &:hover {
+          background: $green;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+// Colors for Accordions and Responsive Accordions Tabs
+tr.paragraph-type--foundation-accordions,
+tr.paragraph-type--foundation-accordions-tabs {
+  .field-multiple-table {
+    tr.draggable:not(.paragraphs-features__add-in-between__row):not(.paragraphs-features__add-in-between__row) {
+      background: $greenLight !important;
+      border-bottom: 20px solid $white;
+    }
+  }
+}
+
+// Colors for Accordion and Responsive Accordion Tab
+tr.paragraph-type--foundation-accordion,
+tr.paragraph-type--foundation-accordion-tab {
+  .field-multiple-table {
+    tr.draggable:not(.paragraphs-features__add-in-between__row):not(.paragraphs-features__add-in-between__row) {
+      background: $white !important;
+      border-bottom: 20px solid $greenLight;
     }
   }
 }
