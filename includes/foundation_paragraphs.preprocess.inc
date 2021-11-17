@@ -25,18 +25,20 @@ function foundation_paragraphs_preprocess_paragraph(&$variables) {
 }
 
 /**
- * Common variables
- * Manage custom ID and classes
+ * Variabili comuni
+ * Elabora eventuali id e classi custom aggiuntive impostate manualmente
  *
  * @param $variables
  * @param $paragraph
  */
 function _bp_preprocessParagraph_commonInfos(&$variables, $paragraph) {
+  // Gestisco eventuali id custom ad hoc
   if($paragraph->hasField('field_foundation_id')) {
     $strId = (!$paragraph->field_foundation_id->isEmpty()) ? trim((string)$paragraph->field_foundation_id->getString()) : '';
     if($strId !== '') { $variables['attributes']['id'] = $strId; }
   }
 
+  // Gestisco eventuali classi custom ad hoc
   if($paragraph->hasField('field_foundation_classes')) {
     $strCls   = (!$paragraph->field_foundation_classes->isEmpty()) ? trim((string)$paragraph->field_foundation_classes->getString()) : '';
     $classes  = ($strCls !== '') ? explode(" ", $strCls) : null;
@@ -47,8 +49,8 @@ function _bp_preprocessParagraph_commonInfos(&$variables, $paragraph) {
 }
 
 /**
- * Common variables
- * Manage custom classes to give margin and padding, both top and bottom
+ * Variabili comuni
+ * Elabora eventuali classi per spaziature come padding e margin superiori ed inferiori
  *
  * @param $variables
  * @param $paragraph
@@ -56,28 +58,28 @@ function _bp_preprocessParagraph_commonInfos(&$variables, $paragraph) {
 function _bp_preprocessParagraph_topBottomSpaces(&$variables, $paragraph) {
   if($paragraph->hasField('field_foundation_top_margin')) {
     $strSpace = (!$paragraph->field_foundation_top_margin->isEmpty()) ? trim((string)$paragraph->field_foundation_top_margin->getString()) : '0';
-    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'tt-mt-'.$strSpace; }
+    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'item-margin-top-'.$strSpace; }
   }
 
   if($paragraph->hasField('field_foundation_bottom_margin')) {
     $strSpace = (!$paragraph->field_foundation_bottom_margin->isEmpty()) ? trim((string)$paragraph->field_foundation_bottom_margin->getString()) : '0';
-    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'tt-mb-'.$strSpace; }
+    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'item-margin-bottom-'.$strSpace; }
   }
 
   if($paragraph->hasField('field_foundation_top_padding')) {
     $strSpace = (!$paragraph->field_foundation_top_padding->isEmpty()) ? trim((string)$paragraph->field_foundation_top_padding->getString()) : '0';
-    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'tt-pt-'.$strSpace; }
+    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'item-padding-top-'.$strSpace; }
   }
 
   if($paragraph->hasField('field_foundation_bottom_padding')) {
     $strSpace = (!$paragraph->field_foundation_bottom_padding->isEmpty()) ? trim((string)$paragraph->field_foundation_bottom_padding->getString()) : '0';
-    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'tt-pb-'.$strSpace; }
+    if($strSpace !== '' && $strSpace !== 'none') { $variables['attributes']['class'][] = 'item-padding-bottom-'.$strSpace; }
   }
 }
 
 /**
- * Grid variables
- * Manage variables used to define container type, gutter and aligns
+ * Variabili di grid
+ * Elabora le variabili per definire il tipo di contanier ed il gutter
  *
  * Container: none / standard / fluid / full
  * Gutter: none / margin / padding / both
@@ -98,6 +100,7 @@ function _bp_preprocessParagraph_gridEnhancer(&$variables, $paragraph) {
   $strHorizAlign = (!$paragraph->field_foundation_horiz_align->isEmpty()) ? trim((string)$paragraph->field_foundation_horiz_align->getString()) : 'none';
   $variables['horizAlign'] = ($strHorizAlign !== 'none') ? 'align-'.$strHorizAlign : '';
 
+  // Gestione gutter
   $strGutter      = (!$paragraph->field_foundation_grid_gutters->isEmpty()) ? trim((string)$paragraph->field_foundation_grid_gutters->getString()) : 'margin';
   $strGutCollapse = (!$paragraph->field_foundation_collapse_gutt->isEmpty()) ? trim((string)$paragraph->field_foundation_collapse_gutt->getString()) : 'none';
   switch($strGutter) {
@@ -122,8 +125,8 @@ function _bp_preprocessParagraph_gridEnhancer(&$variables, $paragraph) {
 }
 
 /**
- * Cell variables
- * Manage variables used to define alignment, spaces and offset
+ * Variabili di cell
+ * Elabora le classi per definire allineamento, spazio ed offset della singola cella
  *
  * @param $variables
  * @param $paragraph
@@ -133,18 +136,31 @@ function _bp_preprocessParagraph_cellEnhancer(&$variables, $paragraph) {
 
   $strSizeS   = (!$paragraph->field_foundation_size_small->isEmpty()) ? trim((string)$paragraph->field_foundation_size_small->getString()) : '12';
   $strOffS    = (!$paragraph->field_foundation_offset_small->isEmpty()) ? trim((string)$paragraph->field_foundation_offset_small->getString()) : 'none';
+  $strOrdS    = (!$paragraph->field_foundation_order_small->isEmpty()) ? trim((string)$paragraph->field_foundation_order_small->getString()) : 'none';
   $classes[]  = _bp_preprocessParagraph_cellEnhancer_getSize($strSizeS, 'small');
   $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOffset($strOffS, 'small');
+  $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOrder($strOrdS, 'small');
 
   $strSizeM   = (!$paragraph->field_foundation_size_medium->isEmpty()) ? trim((string)$paragraph->field_foundation_size_medium->getString()) : 'none';
   $strOffM    = (!$paragraph->field_foundation_offset_medium->isEmpty()) ? trim((string)$paragraph->field_foundation_offset_medium->getString()) : 'none';
+  $strOrdM    = (!$paragraph->field_foundation_order_medium->isEmpty()) ? trim((string)$paragraph->field_foundation_order_medium->getString()) : 'none';
   $classes[]  = _bp_preprocessParagraph_cellEnhancer_getSize($strSizeM, 'medium');
   $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOffset($strOffM, 'medium');
+  $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOrder($strOrdM, 'medium');
 
   $strSizeL   = (!$paragraph->field_foundation_size_large->isEmpty()) ? trim((string)$paragraph->field_foundation_size_large->getString()) : 'none';
   $strOffL    = (!$paragraph->field_foundation_offset_large->isEmpty()) ? trim((string)$paragraph->field_foundation_offset_large->getString()) : 'none';
+  $strOrdL    = (!$paragraph->field_foundation_order_large->isEmpty()) ? trim((string)$paragraph->field_foundation_order_large->getString()) : 'none';
   $classes[]  = _bp_preprocessParagraph_cellEnhancer_getSize($strSizeL, 'large');
   $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOffset($strOffL, 'large');
+  $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOrder($strOrdL, 'large');
+
+  $strSizeXL  = (!$paragraph->field_foundation_size_xlarge->isEmpty()) ? trim((string)$paragraph->field_foundation_size_xlarge->getString()) : 'none';
+  $strOffXL   = (!$paragraph->field_foundation_offset_xlarge->isEmpty()) ? trim((string)$paragraph->field_foundation_offset_xlarge->getString()) : 'none';
+  $strOrdXL   = (!$paragraph->field_foundation_order_xlarge->isEmpty()) ? trim((string)$paragraph->field_foundation_order_xlarge->getString()) : 'none';
+  $classes[]  = _bp_preprocessParagraph_cellEnhancer_getSize($strSizeXL, 'xlarge');
+  $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOffset($strOffXL, 'xlarge');
+  $classes[]  = _bp_preprocessParagraph_cellEnhancer_getOrder($strOrdXL, 'xlarge');
 
   $strVertAlign = (!$paragraph->field_foundation_vert_al_self->isEmpty()) ? trim((string)$paragraph->field_foundation_vert_al_self->getString()) : 'none';
   $classes[]    = ($strVertAlign !== 'none') ? 'align-self-'.$strVertAlign : '';
@@ -162,4 +178,7 @@ function _bp_preprocessParagraph_cellEnhancer_getSize($value, $mq){
 }
 function _bp_preprocessParagraph_cellEnhancer_getOffset($value, $mq){
   return ($value !== 'none') ? $mq.'-offset-'.$value : '';
+}
+function _bp_preprocessParagraph_cellEnhancer_getOrder($value, $mq){
+  return ($value !== 'none') ? $mq.'-order-'.$value : '';
 }

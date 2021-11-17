@@ -1,0 +1,23 @@
+uuid: 454b113e-c005-41b8-9ba8-c3dc7ac31c7f
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_order_large
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_order_large
+field_name: field_foundation_order_large
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Order on large'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

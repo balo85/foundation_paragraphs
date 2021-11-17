@@ -1,0 +1,54 @@
+uuid: c1f7110b-ab5b-4e34-82fb-8ee0e969f0e8
+langcode: it
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_foundation_order_small
+field_name: field_foundation_order_small
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: None
+    -
+      value: '1'
+      label: 'Order 1'
+    -
+      value: '2'
+      label: 'Order 2'
+    -
+      value: '3'
+      label: 'Order 2'
+    -
+      value: '4'
+      label: 'Order 4'
+    -
+      value: '5'
+      label: 'Order 5'
+    -
+      value: '6'
+      label: 'Order 6'
+    -
+      value: '7'
+      label: 'Order 7'
+    -
+      value: '8'
+      label: 'Order 8'
+    -
+      value: '9'
+      label: 'Order 9'
+    -
+      value: '10'
+      label: 'Order 10'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

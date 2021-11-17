@@ -1,0 +1,23 @@
+uuid: a8efe274-6cb6-4f7c-8633-ffa1b4cb3bea
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_offset_xlarge
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_offset_xlarge
+field_name: field_foundation_offset_xlarge
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Offsets on xlarge'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

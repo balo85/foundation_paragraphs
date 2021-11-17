@@ -1,0 +1,23 @@
+uuid: a713095a-9c51-4967-b5fd-72cfc3149b3f
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_order_medium
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_order_medium
+field_name: field_foundation_order_medium
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Order on medium'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

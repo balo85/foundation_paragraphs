@@ -14,9 +14,15 @@ dependencies:
     - field.field.paragraph.foundation_cell.field_foundation_offset_large
     - field.field.paragraph.foundation_cell.field_foundation_offset_medium
     - field.field.paragraph.foundation_cell.field_foundation_offset_small
+    - field.field.paragraph.foundation_cell.field_foundation_offset_xlarge
+    - field.field.paragraph.foundation_cell.field_foundation_order_large
+    - field.field.paragraph.foundation_cell.field_foundation_order_medium
+    - field.field.paragraph.foundation_cell.field_foundation_order_small
+    - field.field.paragraph.foundation_cell.field_foundation_order_xlarge
     - field.field.paragraph.foundation_cell.field_foundation_size_large
     - field.field.paragraph.foundation_cell.field_foundation_size_medium
     - field.field.paragraph.foundation_cell.field_foundation_size_small
+    - field.field.paragraph.foundation_cell.field_foundation_size_xlarge
     - field.field.paragraph.foundation_cell.field_foundation_vert_al_self
     - paragraphs.paragraphs_type.foundation_cell
   module:
@@ -47,7 +53,13 @@ hidden:
   field_foundation_offset_large: true
   field_foundation_offset_medium: true
   field_foundation_offset_small: true
+  field_foundation_offset_xlarge: true
+  field_foundation_order_large: true
+  field_foundation_order_medium: true
+  field_foundation_order_small: true
+  field_foundation_order_xlarge: true
   field_foundation_size_large: true
   field_foundation_size_medium: true
   field_foundation_size_small: true
+  field_foundation_size_xlarge: true
   field_foundation_vert_al_self: true

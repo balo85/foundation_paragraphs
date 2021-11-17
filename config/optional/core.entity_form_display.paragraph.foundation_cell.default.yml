@@ -13,9 +13,15 @@ dependencies:
     - field.field.paragraph.foundation_cell.field_foundation_offset_large
     - field.field.paragraph.foundation_cell.field_foundation_offset_medium
     - field.field.paragraph.foundation_cell.field_foundation_offset_small
+    - field.field.paragraph.foundation_cell.field_foundation_offset_xlarge
+    - field.field.paragraph.foundation_cell.field_foundation_order_large
+    - field.field.paragraph.foundation_cell.field_foundation_order_medium
+    - field.field.paragraph.foundation_cell.field_foundation_order_small
+    - field.field.paragraph.foundation_cell.field_foundation_order_xlarge
     - field.field.paragraph.foundation_cell.field_foundation_size_large
     - field.field.paragraph.foundation_cell.field_foundation_size_medium
     - field.field.paragraph.foundation_cell.field_foundation_size_small
+    - field.field.paragraph.foundation_cell.field_foundation_size_xlarge
     - field.field.paragraph.foundation_cell.field_foundation_vert_al_self
     - image.style.thumbnail
     - paragraphs.paragraphs_type.foundation_cell
@@ -48,12 +54,10 @@ third_party_settings:
       label: Settings
     group_foundation_sizing:
       children:
-        - field_foundation_size_small
-        - field_foundation_offset_small
-        - field_foundation_size_medium
-        - field_foundation_offset_medium
-        - field_foundation_size_large
-        - field_foundation_offset_large
+        - group_foundation_wrp_small
+        - group_foundation_wrp_medium
+        - group_foundation_wrp_large
+        - group_foundation_wrp_xlarge
       parent_name: ''
       weight: 1
       format_type: popup_fake
@@ -84,6 +88,70 @@ third_party_settings:
         description: ''
         required_fields: 1
       label: Backgrounds
+    group_foundation_wrp_small:
+      children:
+        - field_foundation_size_small
+        - field_foundation_offset_small
+        - field_foundation_order_small
+      parent_name: group_foundation_sizing
+      weight: 20
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: wrp-half
+        show_empty_fields: false
+      label: Small
+    group_foundation_wrp_medium:
+      children:
+        - field_foundation_size_medium
+        - field_foundation_offset_medium
+        - field_foundation_order_medium
+      parent_name: group_foundation_sizing
+      weight: 21
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: wrp-half
+        show_empty_fields: false
+      label: Medium
+    group_foundation_wrp_large:
+      children:
+        - field_foundation_size_large
+        - field_foundation_offset_large
+        - field_foundation_order_large
+      parent_name: group_foundation_sizing
+      weight: 25
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: wrp-half
+        show_empty_fields: false
+      label: Large
+    group_foundation_wrp_xlarge:
+      children:
+        - field_foundation_size_xlarge
+        - field_foundation_offset_xlarge
+        - field_foundation_order_xlarge
+      parent_name: group_foundation_sizing
+      weight: 29
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: wrp-half
+        show_empty_fields: false
+      label: XLarge
 _core:
   default_config_hash: OI471EgECMoIiXIndca1_z0dgNy32uMhxhwK1W2ypUU
 id: paragraph.foundation_cell.default
@@ -167,37 +235,73 @@ content:
     type: string_textfield
     region: content
   field_foundation_offset_large:
-    weight: 13
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_foundation_offset_medium:
-    weight: 11
+    weight: 23
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_foundation_offset_small:
-    weight: 9
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_foundation_offset_xlarge:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_foundation_order_large:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_foundation_order_medium:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_foundation_order_small:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_foundation_order_xlarge:
+    weight: 32
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_foundation_size_large:
-    weight: 12
+    weight: 26
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_foundation_size_medium:
-    weight: 10
+    weight: 22
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_foundation_size_small:
-    weight: 8
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_foundation_size_xlarge:
+    weight: 30
     settings: {  }
     third_party_settings: {  }
     type: options_select

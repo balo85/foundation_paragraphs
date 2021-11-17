@@ -1,0 +1,23 @@
+uuid: c2d5dbb3-c8a9-474c-bc67-6619edc49db3
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_order_small
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_order_small
+field_name: field_foundation_order_small
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Order on small'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

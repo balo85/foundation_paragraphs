@@ -78,6 +78,25 @@ tr.paragraph-type--foundation-grid {
     border: 1px solid $black;
     color: $black;
   }
+
+  // Wrapper for all the sizing infos
+  .field-group-popup-fake[data-drupal-selector^="popup-field-group-foundation-sizing"] {
+    > .fieldset-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: calc(100% + 40px);
+      margin: 0 -20px;
+
+      > .field-group-fieldset {
+        flex: 1 1 0;
+        flex-basis: 100%;
+        margin: 10px;
+      }
+      > .field-group-fieldset.wrp-half { flex-basis: 40%; }
+    }
+  }
 }
 .js tr.paragraph-type--foundation-grid {
   .paragraphs_ee__add-in-between__wrapper .paragraphs_ee__add-in-between__button {

@@ -1,0 +1,23 @@
+uuid: aa43bf00-f05f-45fa-8e53-0e894c6066a8
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_foundation_order_xlarge
+    - paragraphs.paragraphs_type.foundation_cell
+  module:
+    - options
+id: paragraph.foundation_cell.field_foundation_order_xlarge
+field_name: field_foundation_order_xlarge
+entity_type: paragraph
+bundle: foundation_cell
+label: 'Order on xlarge'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string
